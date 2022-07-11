@@ -407,8 +407,7 @@ a:hover {
   grid-template-rows: auto;
   grid-template-areas:
     "cont cont cont"
-    "hours contact address"
-    "iframe iframe iframe";
+    "hours contact address";
   width: 100%;
   height: auto;
   padding: 25px;
