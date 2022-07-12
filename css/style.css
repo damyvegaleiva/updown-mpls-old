@@ -109,7 +109,6 @@ body {
 .nav-bar__list-item {
   display: inline-block;
   padding: 5px 35px;
-  margin-right: 50px;
   font-size: 2.5rem;
   text-shadow: 2px 2px #af0e7c;
   box-shadow: -2px -2px 0px #af0e7c, 2px 2px 0px #028299;
@@ -949,7 +948,6 @@ a:hover {
     font-size: 13rem;
     width: 99%;
     height: 100vh;
-
     margin: 2px auto 0;
   }
 
