@@ -59,7 +59,7 @@ body {
   text-transform: uppercase;
   animation: flicker 3.5s infinite alternate;
   margin: 20px;
-  height: auto;
+  padding: 100px;
 }
 
 .headline__location {
@@ -297,7 +297,7 @@ a:hover {
   height: 450px;
 }
 
-/* ------------------------- CSS SLIDE MANUAL ------------------------- */
+/* ------------------------- CSS SLIDER MANUAL ------------------------- */
 
 .article-two__slider--navigation-manual {
   position: absolute;
@@ -346,7 +346,7 @@ a:hover {
   margin-left: -100%;
 }
 
-/* ------------------------- CSS SLIDE AUTO ------------------------- */
+/* ------------------------- CSS SLIDER AUTO ------------------------- */
 
 .article-two__slider--navigation-auto {
   position: absolute;
@@ -408,7 +408,6 @@ a:hover {
     "cont cont cont"
     "hours contact address";
   width: 100%;
-  height: auto;
   padding: 25px;
 }
 
@@ -986,6 +985,7 @@ a:hover {
 
   .nav-bar__list-item {
     width: 175px;
+    margin-right: 20px;
   }
 
   .nav-bar__list-item:hover {
