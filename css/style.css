@@ -124,6 +124,13 @@ a:hover {
   text-decoration: none;
 }
 
+.nav-bar__links-list .nav-bar__list-item a {
+  display: inline-block;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 .nav-bar__list-item--not-current {
   background: rgba(1, 1, 1, 0.5);
 }
@@ -984,7 +991,12 @@ a:hover {
   }
 
   .nav-bar__list-item {
-    width: 175px;
+    width: 15%;
+    max-width: 250px;
+    min-width: 175px;
+  }
+
+  .nav-bar__list-item:not(:last-child) {
     margin-right: 20px;
   }
 
