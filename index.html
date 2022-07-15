@@ -16,6 +16,7 @@
   <div class="grid-container">
 
     <!--? -----HEADER----- -->
+
     <header>
       <div class="header-container">
         <h1 class="header__updown">Up- <br> Down </h1>
@@ -28,20 +29,40 @@
     </header>
 
     <!--? -----NAVIGATION BAR----- -->
-    <nav class="nav-bar" id="home">
-      <ul class="nav-bar__links-list">
-        <li class="nav-bar__list-item nav-bar__list-item--current"><a href="./index.html">HOME</a></li>
-        <li class="nav-bar__list-item nav-bar__list-item--not-current"><a href="./pages/menu.html#menu">MENU</a></li>
-        <li class="nav-bar__list-item nav-bar__list-item--not-current"><a href="./pages/events.html#events">EVENTS</a>
-        </li>
-        <li class="nav-bar__list-item nav-bar__list-item--not-current"><a
-            href="./pages/gallery.html#gallery">GALLERY</a></li>
-        <li class="nav-bar__list-item nav-bar__list-item--not-current"><a href="./pages/contact.html">CONTACT</a>
-        </li>
-      </ul>
+
+    <nav class="navbar sticky-top navbar-expand-md nav-bar__bg-color" id="home">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"><img src="./images/up-down-logo.png" class="nav-bar__logo"
+            alt="up-down logo"></a>
+        <button class="navbar-toggler toggler-icon--color" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 nav-bar__links-list">
+            <li class="nav-item nav-bar__list-item nav-bar__list-item--current">
+              <a aria-current="page" href="./index.html#home">HOME</a>
+            </li>
+            <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+              <a href="./pages/menu.html#menu">MENU</a>
+            </li>
+            <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+              <a href="./pages/events.html#events">EVENTS</a>
+            </li>
+            <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+              <a href="./pages/gallery.html#gallery">GALLERY</a>
+            </li>
+            <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+              <a href="./pages/contact.html#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!--? -----CONTENT----- -->
+
     <main>
       <section>
         <!--* ----SECTION I------ -->
