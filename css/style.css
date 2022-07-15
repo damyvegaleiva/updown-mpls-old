@@ -30,16 +30,12 @@ body {
   color: #cdcdcd;
   font-family: "Dela Gothic One", cursive;
   font-weight: normal;
+  display: grid;
 }
 
 /*? ------------------------------------- CSS HOME.HTML ------------------------------------- */
 
 /* ----------HEADER---------- */
-
-.grid-container {
-  display: grid;
-  width: 100%;
-}
 
 .header-container {
   display: flex;
@@ -117,6 +113,18 @@ a:visited,
 a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.nav-bar__icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url("../images/hamburguer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: 0.7;
 }
 
 .nav-bar__logo {
