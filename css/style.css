@@ -41,54 +41,58 @@ body {
   width: 100%;
 }
 
-.headline {
+.header-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   background: url("../images/up-down-cover.jpg");
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  font-family: "Tourney", cursive;
-  font-size: 5.5rem;
-  line-height: 2.5em;
-  color: #0398b3;
+  height: 400px;
+  width: 100%;
   border: 0.4rem solid #fff;
   border-radius: 25px;
   max-width: 2500px;
-  height: auto;
-  text-transform: uppercase;
+  margin: 2px auto 5px;
   animation: flicker 3.5s infinite alternate;
-  margin: 15px;
+  font-family: "Tourney", cursive;
+  text-transform: uppercase;
 }
 
-.headline__location {
-  margin: auto;
-  display: inline-block;
-  font-size: 6.5rem;
-}
-
-.headline__dropdown {
+.header__insert-coin {
   display: none;
+}
+
+.header__updown,
+.header__location {
+  color: #0398b3;
+}
+
+.header__updown {
+  font-size: 10rem;
+}
+
+.header__location {
   font-size: 3rem;
-  color: yellowgreen;
+}
+
+.header__insert-coin {
+  font-size: 3rem;
   text-shadow: none;
   -webkit-text-stroke: 1px #000;
   -webkit-text-fill-color: rgb(255, 255, 0);
   filter: brightness(125%);
   animation: insert-coin 3s linear infinite;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.headline__img--size {
-  width: 125px;
-  height: 125px;
+.header__img--size {
+  width: 115px;
+  height: 115px;
   margin: auto 15px;
-}
-
-.headline__img--hover:hover {
-  cursor: pointer;
-  opacity: 1;
-  transition: 0.7s ease;
 }
 
 /* -------------------- NAV BAR --------------------*/
@@ -847,9 +851,9 @@ a:hover {
 @media screen and (min-width: 768px) {
   /* -------------------------------- INDEX -------------------------------- */
 
-  .nav-bar__links-list {
+  /* .nav-bar__links-list {
     width: 95%;
-  }
+  } */
 
   .article-one {
     display: grid;
@@ -950,31 +954,22 @@ a:hover {
 @media screen and (min-width: 1024px) {
   /* -------------------------------- INDEX -------------------------------- */
 
-  .headline {
-    font-size: 12.5rem;
+  .header-container {
+    justify-content: space-around;
+    height: auto;
     width: 99%;
-    height: 100vh;
-    margin: 2px auto 0;
   }
 
-  .headline__location {
-    margin-top: -100px;
+  .header__updown {
+    font-size: 30rem;
   }
 
-  .headline__heading {
-    margin: 50px auto -20px; /* REVEER */
+  .header__location {
+    font-size: 5rem;
   }
 
-  .headline__dropdown {
+  .header__insert-coin {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: -175px;
-  }
-
-  .headline__dropdown:hover {
-    animation: insert-coin-opacity 1s infinite;
   }
 
   .nav-bar {
