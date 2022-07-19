@@ -786,6 +786,23 @@ a:hover {
   background-color: rgb(110, 110, 110);
 }
 
+/*? -------------------------------- CSS PRIVACY-POLICY.HTML -------------------------------- */
+
+.privacy-policy {
+  text-decoration: none;
+  color: inherit;
+}
+
+.privacy-policy:hover {
+  text-decoration: underline;
+}
+
+.faqs-footer {
+  background: #111;
+  border-top: solid 3px rgb(0, 0, 0);
+  text-shadow: 1px 1px #af0e7c;
+}
+
 /** ////////////////////////////////////// FINAL CSS PAGES /////////////////////////////////////// */
 
 /*? -------------------------------- ANIMATIONS -------------------------------- */
