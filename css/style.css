@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tourney:wght@800&display=swap");
 
+/*? ------------------------------------- SET NEON COLOR ------------------------------------- */
+
 :root {
-  /*? ------------------------------------- SET NEON COLOR ------------------------------------- */
   --neon-text-color: #0398b3;
-  /* Alt option col #43d3d8 */
   --neon-border-color: #08f;
   --neon-border-headline: #af0e7c;
 }
@@ -35,7 +35,7 @@ body {
 
 /*? ------------------------------------- CSS HOME.HTML ------------------------------------- */
 
-/* ----------HEADER---------- */
+/* --------------------------- HEADER ---------------------------*/
 
 .header-container {
   display: flex;
@@ -91,7 +91,7 @@ body {
   margin: auto 15px;
 }
 
-/* -------------------- NAV BAR --------------------*/
+/* --------------------------- NAV BAR ---------------------------*/
 nav {
   margin-bottom: 50px;
 }
@@ -140,7 +140,7 @@ a:hover {
   background: rgb(0, 0, 0);
 }
 
-/* -------------------- SECTION I -------------------- */
+/* --------------------------- SECTION I --------------------------- */
 
 .article-one {
   background: rgba(1, 1, 1, 0.5);
@@ -236,8 +236,8 @@ a:hover {
   display: block;
 }
 
-/* -------------------- SECTION II -------------------- */
-/* ----------------- SLIDER SPECIALS----------------- */
+/* --------------------------- SECTION II --------------------------- */
+/* ------------------- SLIDER SPECIALS ------------------- */
 
 .article-two {
   position: relative;
@@ -788,24 +788,88 @@ a:hover {
 
 /*? -------------------------------- CSS PRIVACY-POLICY.HTML -------------------------------- */
 
-.privacy-policy {
-  text-decoration: none;
+.privacy-policy__link {
   color: inherit;
 }
 
-.privacy-policy:hover {
+.privacy-policy__heading {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.privacy-policy__link:hover {
   text-decoration: underline;
 }
 
-.faqs-footer {
+.privacy-policy__heading .faqs-footer {
   background: #111;
   border-top: solid 3px rgb(0, 0, 0);
   text-shadow: 1px 1px #af0e7c;
 }
 
-/** ////////////////////////////////////// FINAL CSS PAGES /////////////////////////////////////// */
+.carousel-container--margin {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 0;
+  border: solid 1.5px gray;
+  box-shadow: -1px 1px 15px rgb(167, 167, 167);
+}
 
-/*? -------------------------------- ANIMATIONS -------------------------------- */
+.carousel__heading {
+  font-size: 2em;
+  text-shadow: 1px 1px #af0e7c;
+}
+
+.carousel__text {
+  font-size: 2em;
+  color: rgb(196, 196, 196);
+  text-shadow: 1px 1px #af0e7c;
+  display: none;
+}
+
+.carousel__text--bg {
+  background: rgba(1, 1, 1, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.accordion {
+  --bs-accordion-bg: rgba(1, 1, 1, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.accordion-item {
+  font-size: 1em;
+  border: 2px solid black;
+}
+
+.accordion-button {
+  font-size: 1.2em;
+  background: white;
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgb(221, 221, 221);
+  background: black;
+}
+
+.accordion-body p {
+  color: rgb(196, 196, 196);
+  text-shadow: 1px 1px #af0e7c;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.accordion-body p a {
+  color: rgb(196, 196, 196);
+  text-shadow: 1px 1px #af0e7c;
+}
+
+/*? -------------------------------- FINAL CSS PAGES -------------------------------- */
+/* --------------------------------- FINAL CSS PAGES -------------------------------- */
+
+/*TODO -------------------------------- ANIMATIONS -------------------------------- TODO*/
 
 @keyframes gameover {
   50% {
@@ -859,10 +923,26 @@ a:hover {
   }
 }
 
-/*? -------------------------------- MEDIA-BREAKPOINTS -------------------------------- */
+/*TODO -------------------------------- MEDIA-BREAKPOINTS -------------------------------- TODO*/
+
+/*? -------------------------------- PRIMER BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 450px) {
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 4.5em;
+  }
+
+  .carousel__heading {
+    font-size: 3.5em;
+  }
+}
+
+/*? -------------------------------- SECOND BREAK-POINT -------------------------------- */
 
 @media screen and (min-width: 768px) {
-  /* -------------------------------- INDEX -------------------------------- */
+  /* -------------------------------- INDEX.HTML -------------------------------- */
 
   .header-container {
     height: 600px;
@@ -888,6 +968,10 @@ a:hover {
     box-shadow: -2px -2px 0px #af0e7c, 2px 2px 0px #028299;
     width: 245px;
   }
+  .nav-bar__list-item:not(:last-child) {
+    border-bottom: none;
+  }
+
   .nav-bar__list-item--not-current {
     background: rgba(1, 1, 1, 0.5);
   }
@@ -952,9 +1036,8 @@ a:hover {
   .article-two {
     width: 95%;
   }
-  /* -------------------------------- INDEX END -------------------------------- */
 
-  /* -------------------------------- MENU -------------------------------- */
+  /* -------------------------------- MENU.HTML -------------------------------- */
 
   .menu {
     width: 95%;
@@ -972,9 +1055,7 @@ a:hover {
     width: 50%;
   }
 
-  /* -------------------------------- MENU END -------------------------------- */
-
-  /* -------------------------------- EVENTS -------------------------------- */
+  /* -------------------------------- EVENTS.HTML -------------------------------- */
 
   .calendar__calendar-iframe {
     height: 600px;
@@ -984,9 +1065,7 @@ a:hover {
     height: 80%;
   }
 
-  /* -------------------------------- EVENTS END -------------------------------- */
-
-  /* -------------------------------- GALLERY -------------------------------- */
+  /* -------------------------------- GALLERY.HTML -------------------------------- */
 
   .v-stretch {
     grid-row: span 2;
@@ -1004,13 +1083,27 @@ a:hover {
   .gallery {
     max-width: 1300px;
   }
-  /* -------------------------------- GALLERY END -------------------------------- */
+
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 6.5em;
+  }
+
+  .carousel__text {
+    display: block;
+    font-size: 1.8em;
+  }
+
+  .accordion-body p {
+    text-align: left;
+  }
 }
 
-/*? -------------------------------- FIN PRIMER BREAK-POINT -------------------------------- */
+/*? -------------------------------- THIRD BREAK-POINT -------------------------------- */
 
 @media screen and (min-width: 1024px) {
-  /* -------------------------------- INDEX -------------------------------- */
+  /* -------------------------------- INDEX.HTML -------------------------------- */
 
   .header-container {
     justify-content: space-around;
@@ -1095,17 +1188,7 @@ a:hover {
     display: block;
   }
 
-  /* -------------------------------- INDEX END -------------------------------- */
-
-  /* -------------------------------- MENU -------------------------------- */
-
-  /* -------------------------------- MENU END -------------------------------- */
-
-  /* -------------------------------- GALLERY -------------------------------- */
-
-  /* -------------------------------- GALLERY END -------------------------------- */
-
-  /* -------------------------------- EVENTS -------------------------------- */
+  /* -------------------------------- EVENTS.HTML -------------------------------- */
 
   .events-container {
     width: 100%;
@@ -1119,9 +1202,7 @@ a:hover {
     height: 85%;
   }
 
-  /* -------------------------------- EVENTS END -------------------------------- */
-
-  /* -------------------------------- CONTACT -------------------------------- */
+  /* -------------------------------- CONTACT.HTML -------------------------------- */
 
   .contact-us__box {
     display: grid;
@@ -1135,15 +1216,30 @@ a:hover {
     margin: 0 0 0 25px;
   }
 }
-
-/* -------------------------------- CONTACT END -------------------------------- */
+/*? -------------------------------- CUARTO BREAK-POINT -------------------------------- */
 
 @media screen and (min-width: 1400px) {
-  /* -------------------------------- GALLERY -------------------------------- */
+  /* -------------------------------- GALLERY.HTML -------------------------------- */
 
   .gallery {
     width: 100%;
   }
 
-  /* -------------------------------- GALLERY END -------------------------------- */
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 7.5em;
+  }
+
+  .carousel-container--mb {
+    margin-bottom: 100px;
+  }
+
+  .carousel__heading {
+    font-size: 5em;
+  }
+
+  .carousel__text {
+    font-size: 2.5em;
+  }
 }
