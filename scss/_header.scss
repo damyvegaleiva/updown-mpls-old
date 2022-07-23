@@ -1,0 +1,50 @@
+/* --------------------------- HEADER ---------------------------*/
+
+.header-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/up-down-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: $wth-100;
+  border: 0.4rem solid $white;
+  border-radius: 25px;
+  max-width: 2500px;
+  margin: 2px auto 5px;
+  animation: flicker 3.5s infinite alternate;
+  font-family: $fontTourney;
+  text-transform: uppercase;
+}
+
+.header__insert-coin {
+  display: none;
+}
+
+.header__updown {
+  font-size: 10rem;
+}
+
+.header__location {
+  font-size: $textMedium;
+}
+
+.header__insert-coin {
+  font-size: $textMedium;
+  text-shadow: none;
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: rgb(255, 255, 0);
+  filter: brightness(125%);
+  animation: insert-coin 3s linear infinite;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header__img--size {
+  width: 115px;
+  height: 115px;
+  margin: auto 15px;
+}

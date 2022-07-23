@@ -1,0 +1,67 @@
+/* -------------------- CLASES COMPARTIDAS -------------------- */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("../images/background.jpg") no-repeat fixed center;
+  background-size: cover;
+  color: $textColor;
+  font-family: "Dela Gothic One", cursive;
+  font-weight: normal;
+  display: grid;
+}
+
+.header__updown,
+.header__location {
+  color: $neonTextColor;
+}
+.headline-pages {
+  font-size: 7.5rem;
+  text-shadow: 5px 2px $subheadTextShadow;
+  color: $white;
+  border-left: 3px solid $neonMagenta;
+  border-right: 3px solid $neonCyan;
+  background: $lightBlack;
+  text-align: center;
+  padding: 0 15px;
+  text-decoration: underline;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.menu__image,
+.calendar__calendar-iframe {
+  border: 5px solid $borderColor;
+  border-radius: 5px;
+}
+
+.article-two,
+.article-one,
+.menu__beer-container,
+.menu__pizza-container,
+.calendar__container,
+.gallery,
+.carousel-container--margin {
+  border: 1.5px solid $borderArticleColor;
+  border-radius: 25px;
+  box-shadow: -1px 1px 15px $borderArticleColor;
+}
+
+.menu__beer-container,
+.menu__pizza-container,
+.calendar__container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}

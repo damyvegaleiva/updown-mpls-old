@@ -1,0 +1,50 @@
+/*TODO -------------------------------- ANIMATIONS -------------------------------- TODO*/
+
+@keyframes gameover {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  99%,
+  100% {
+    text-shadow: -0.1rem -0.1rem 1rem $white, 0.2rem 0.2rem 1rem $white,
+      0 0 2rem $neonTextColor, 0 0 4rem $neonTextColor, 0 0 6rem $neonTextColor,
+      0 0 8rem $neonTextColor, 0 0 10rem $neonTextColor;
+
+    box-shadow: 0 0 0.5rem $white, inset 0 0 0.5rem $white,
+      0 0 2rem $neonMagenta, inset 0 0 2rem $neonMagenta, 0 0 4rem $neonMagenta,
+      inset 0 0 4rem $neonMagenta;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+@keyframes insert-coin {
+  25%,
+  75% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes insert-coin-opacity {
+  0% {
+    opacity: 1;
+  }
+}

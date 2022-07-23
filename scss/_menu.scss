@@ -1,0 +1,31 @@
+/*? ------------------------------------- CSS MENU.HTML ------------------------------------- */
+.menu {
+  width: 90%;
+  margin: auto;
+  max-width: 1920px;
+}
+.menu__image {
+  margin: 0 auto 100px;
+  width: 80%;
+}
+
+.menu__headings {
+  border-radius: 15px 15px 0 0;
+  padding-top: 55px;
+}
+
+.menu__beer-container {
+  background: url("../images/beer-taps.jpg");
+  background-position: right;
+}
+
+.menu__pizza-container {
+  background-image: url("../images/pizza.jpg");
+  text-align: center;
+}
+
+.menu__beer-container,
+.menu__pizza-container {
+  border-radius: 15px;
+  margin-bottom: 50px;
+}

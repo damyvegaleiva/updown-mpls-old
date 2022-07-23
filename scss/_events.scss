@@ -1,0 +1,20 @@
+/*? -------------------------------- CSS EVENTS.HTML -------------------------------- */
+events-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.calendar__calendar-iframe {
+  margin-bottom: 150px;
+  width: 85%;
+  height: 500px;
+  /* <!-- width="1000" height="600" --> */
+}
+
+.calendar__container {
+  text-align: center;
+  margin-bottom: 150px;
+  background: url("../images/events.jpg");
+  border-radius: 0px;
+  height: 75%;
+}

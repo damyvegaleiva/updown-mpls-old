@@ -1,0 +1,126 @@
+/*? -------------------------------- CSS CONTACT.HTML -------------------------------- */
+.contact-heading {
+  margin-bottom: 0;
+}
+
+.contact-us__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $wth-100;
+  height: $hht-100;
+  padding: 20px 100px;
+  font-size: $textXsmall;
+  margin-bottom: 250px;
+}
+
+.contact-us__container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: $wth-100;
+  height: $hht-100;
+  background: url("../images/alt-background.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.contact-us__box {
+  max-width: 850px;
+  background-color: $lightBlack;
+  box-shadow: 0px 0px 19px 5px $lightBlack;
+  border-radius: 5px;
+  border: 2px solid $borderColor;
+}
+
+.contact-us__left {
+  margin: 25px;
+  height: 15%;
+  background: url("../images/up-down-minneapolis.png") no-repeat center;
+  background-size: contain;
+}
+
+.contact-us__right {
+  padding: 25px 40px;
+}
+
+.contact-us__heading {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-shadow: 5px 2px $subheadTextShadow;
+  color: $white;
+  text-align: center;
+}
+
+.contact-us__heading:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: $neonTextColor;
+}
+
+.contact-us__city-select,
+.contact-us__fieldset,
+.contact-us__subscribe--br {
+  margin-bottom: 20px;
+}
+
+.contact-us__subscribe {
+  display: block;
+}
+
+.contact-us__field {
+  width: $wth-100;
+  padding: 5px 10px;
+  outline: none;
+  border: 2px solid $darkBlack;
+  background-color: $white;
+  font-size: $textSmall;
+  margin-bottom: 22px;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  &:focus {
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+  }
+}
+
+.contact-us__area {
+  min-height: 150px;
+}
+
+.contact-us__btn {
+  font-family: $fontPressStart;
+  width: $wth-100;
+  padding: 8px 16px;
+  font-size: $textSmall;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+.contact-us__btn--submit {
+  color: white;
+  background-color: $neonTextColor;
+  margin-bottom: 5px;
+}
+
+.contact-us__btn--submit:hover {
+  background-color: $neonCyan;
+}
+
+.contact-us__btn--cancel:hover {
+  background-color: $borderArticleColor;
+}

@@ -1,0 +1,259 @@
+/*? ------------------------------------- CSS INDEX.HTML ------------------------------------- */
+/* --------------------------- SECTION I --------------------------- */
+
+.article-one {
+  background: $lightBlack;
+  width: 90%;
+  max-width: 1700px;
+  height: auto;
+  margin: 0 auto 150px;
+  padding: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  gap: 3em;
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+}
+
+.article-one-subhead {
+  font-size: 7.5rem;
+  text-shadow: 5px 2px #6a5acd;
+  color: rgb(235, 235, 235);
+  border-left: 3px solid $neonMagenta;
+  border-right: 3px solid $neonCyan;
+  padding: 0 15px;
+  text-align: center;
+  order: 1;
+
+  .span-subhead {
+    color: #32d8e0;
+    text-decoration: underline;
+  }
+}
+
+[class*="parrafo-"] {
+  font-size: $textSmall;
+  color: rgb(196, 196, 196);
+  text-shadow: 1px 1px $neonMagenta;
+  padding: 25px;
+  box-shadow: -3px 1px 10px $neonTextColor;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.parrafo-one {
+  order: 3;
+}
+
+.parrafo-two {
+  order: 4;
+}
+
+.parrafo-three {
+  order: 5;
+}
+
+.parrafo-four {
+  order: 6;
+}
+
+.parrafo-five {
+  order: 7;
+}
+.parrafo-six {
+  order: 8;
+}
+
+.aside-one {
+  background-image: url("https://assets.codepen.io/t-1/freddy-g-lhy1lY3CyLI-unsplash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: $textLarge;
+  width: 600px;
+  height: 900px;
+  margin: 5px 20px;
+  border-radius: 5px;
+  border: 3px solid $borderColor;
+  order: 2;
+
+  .aside-one__parrafo {
+    margin-top: 600px;
+    background-color: transparent;
+    background-color: $lightBlack;
+    text-shadow: 5px 2px $neonMagenta;
+
+    .aside-one__photo-by {
+      font-size: 1rem;
+      background-color: $darkBlack;
+      text-shadow: 2px 1px $neonMagenta;
+      display: block;
+    }
+  }
+}
+
+/* --------------------------- SECTION II --------------------------- */
+/* ------------------- SLIDER SPECIALS ------------------- */
+
+.article-two {
+  position: relative;
+  margin: 0 auto 150px;
+  width: 85%;
+  max-width: 1920px;
+}
+
+.article-two::before {
+  content: "";
+  background-image: url("../images/slider-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.article-two__headline {
+  font-size: 7rem;
+  text-shadow: 5px 2px $subheadTextShadow;
+  border-left: 5px solid $neonMagenta;
+  border-right: 5px solid $neonCyan;
+  background: $lightBlack;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 25px 25px 0 0;
+  text-decoration: underline;
+}
+
+.article-two__slider {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px auto;
+  border: 3px solid $borderColor;
+}
+
+.article-two__slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+  input {
+    display: none;
+  }
+}
+
+.article-two__slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.article-two__image {
+  width: 450px;
+  height: 450px;
+}
+
+/* ------------------------- CSS SLIDER MANUAL ------------------------- */
+
+.article-two__slider--navigation-manual {
+  position: absolute;
+  width: 450px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid $white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  &:hover {
+    background-color: $sliderBtnColor;
+  }
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+
+/* ------------------------- CSS SLIDER AUTO ------------------------- */
+
+.article-two__slider--navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.article-two__slider--auto-btn {
+  border: 2px solid $white;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.article-two__slider--navigation-auto {
+  .article-two__slider--auto-btn {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+#radio1:checked ~ .article-two__slider--navigation-auto .auto-btn1 {
+  background: $sliderBtnColor;
+}
+
+#radio2:checked ~ .article-two__slider--navigation-auto .auto-btn2 {
+  background: $sliderBtnColor;
+}
+
+#radio3:checked ~ .article-two__slider--navigation-auto .auto-btn3 {
+  background: $sliderBtnColor;
+}
+
+#radio4:checked ~ .article-two__slider--navigation-auto .auto-btn4 {
+  background: $sliderBtnColor;
+}
+
+#radio5:checked ~ .article-two__slider--navigation-auto .auto-btn5 {
+  background: $sliderBtnColor;
+}
+
+#radio6:checked ~ .article-two__slider--navigation-auto .auto-btn6 {
+  background: $sliderBtnColor;
+}

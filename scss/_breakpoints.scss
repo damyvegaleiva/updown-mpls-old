@@ -1,0 +1,320 @@
+/*TODO -------------------------------- MEDIA-BREAKPOINTS -------------------------------- TODO*/
+
+/*? -------------------------------- PRIMER BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 450px) {
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 4.5em;
+  }
+
+  .carousel__heading {
+    font-size: 3.5em;
+  }
+}
+
+/*? -------------------------------- SECOND BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 768px) {
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+
+  .header-container {
+    height: 600px;
+  }
+
+  .header__updown {
+    font-size: 20rem;
+  }
+
+  .header__location {
+    font-size: 5rem;
+  }
+
+  .nav-bar__logo {
+    display: none;
+  }
+
+  .nav-bar__bg-color {
+    background: rgba(17, 11, 11, 0.5);
+  }
+
+  .nav-bar__list-item {
+    box-shadow: -2px -2px 0px #af0e7c, 2px 2px 0px #028299;
+    width: 245px;
+  }
+  .nav-bar__list-item:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .nav-bar__list-item--not-current {
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  .nav-bar__list-item--current {
+    background-color: white;
+    color: black;
+  }
+
+  .nav-bar__list-item:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: -2px -2px 0px #028299, 2px 2px 0px #af0e7c;
+    transition: background-color 0.5s ease;
+  }
+
+  .nav-bar__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .nav-bar__links-list {
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  .article-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "subhead aside"
+      "pf1 pf2"
+      "pf3 pf4"
+      "pf5 pf6";
+    width: 95%;
+  }
+
+  .article-one-subhead {
+    grid-area: subhead;
+    text-align: left;
+  }
+
+  .aside-one {
+    grid-area: aside;
+  }
+
+  .parrafo-one {
+    grid-area: pf1;
+  }
+
+  .parrafo-two {
+    grid-area: pf4;
+  }
+
+  .parrafo-three {
+    grid-area: pf3;
+  }
+
+  .parrafo-six {
+    grid-area: pf2;
+  }
+  .article-two {
+    width: 95%;
+  }
+
+  /* -------------------------------- MENU.HTML -------------------------------- */
+
+  .menu {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+    margin: 0 auto;
+  }
+
+  .menu__beer-container {
+    width: 50%;
+  }
+
+  .menu__pizza-container {
+    width: 50%;
+  }
+
+  /* -------------------------------- EVENTS.HTML -------------------------------- */
+
+  .calendar__calendar-iframe {
+    height: 600px;
+  }
+
+  .calendar__container {
+    height: 80%;
+  }
+
+  /* -------------------------------- GALLERY.HTML -------------------------------- */
+
+  .v-stretch {
+    grid-row: span 2;
+  }
+
+  .h-stretch {
+    grid-column: span 2;
+  }
+
+  .big-stretch {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .gallery {
+    max-width: 1300px;
+  }
+
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 6.5em;
+  }
+
+  .carousel__text {
+    display: block;
+    font-size: 1.8em;
+  }
+
+  .accordion-body p {
+    text-align: left;
+  }
+}
+
+/*? -------------------------------- THIRD BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 1024px) {
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+
+  .header-container {
+    justify-content: space-around;
+    height: auto;
+    width: 99%;
+  }
+
+  .header__updown {
+    font-size: 30rem;
+  }
+
+  .header__location {
+    font-size: 5rem;
+  }
+
+  .header__insert-coin {
+    display: flex;
+  }
+
+  .article-one {
+    grid-template-areas:
+      "subhead aside"
+      "pf1 aside"
+      "pf2 pf3"
+      "pf4 pf5"
+      "pf6 pf6";
+    width: 95%;
+  }
+
+  .article-one-subhead {
+    grid-area: subhead;
+  }
+
+  .aside-one {
+    grid-area: aside;
+    margin: auto;
+  }
+  [class*="parrafo-"] {
+    text-align: left;
+  }
+
+  .parrafo-one {
+    grid-area: pf2;
+  }
+
+  .parrafo-two {
+    grid-area: pf1;
+    height: 100%;
+  }
+
+  .parrafo-three {
+    grid-area: pf6;
+  }
+
+  .parrafo-four {
+    grid-area: pf4;
+  }
+
+  .parrafo-five {
+    grid-area: pf5;
+  }
+
+  .parrafo-six {
+    grid-area: pf3;
+  }
+
+  .article-two__headline {
+    font-size: 9rem;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .footer__list-social a:hover .footer__list-icon {
+    color: #0398b3;
+  }
+
+  .footer__iframe-location {
+    display: block;
+  }
+
+  /* -------------------------------- EVENTS.HTML -------------------------------- */
+
+  .events-container {
+    width: 100%;
+  }
+
+  .calendar__calendar-iframe {
+    max-width: 1000px;
+  }
+
+  .calendar__container {
+    height: 85%;
+  }
+
+  /* -------------------------------- CONTACT.HTML -------------------------------- */
+
+  .contact-us__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-us__left {
+    height: 100%;
+    margin: 0 0 0 25px;
+  }
+}
+/*? -------------------------------- CUARTO BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 1400px) {
+  /* -------------------------------- GALLERY.HTML -------------------------------- */
+
+  .gallery {
+    width: 100%;
+  }
+
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 7.5em;
+  }
+
+  .carousel-container--mb {
+    margin-bottom: 100px;
+  }
+
+  .carousel__heading {
+    font-size: 5em;
+  }
+
+  .carousel__text {
+    font-size: 2.5em;
+  }
+}

@@ -1,0 +1,110 @@
+/* -------------------- FOOTER -------------------- */
+
+.footer {
+  background: $darkBlack;
+  border-top: solid 3px $darkBlack;
+  text-shadow: 1px 1px $neonMagenta;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cont cont cont"
+    "hours contact address";
+  width: $wth-100;
+  padding: 25px;
+}
+
+.footer__content {
+  border-right: 3px solid $neonCyan;
+  border-left: 3px solid $neonCyan;
+  grid-area: cont;
+}
+
+.footer__hours {
+  grid-area: hours;
+}
+.footer__contact {
+  grid-area: contact;
+}
+.footer__address {
+  grid-area: address;
+}
+
+.footer__hours,
+.footer__contact,
+.footer__address,
+.footer__content {
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__heading {
+  font-size: 4rem;
+  line-height: $textMedium;
+}
+
+.footer__social-parrafo {
+  max-width: 500px;
+  line-height: 35px;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+
+.footer__list-social {
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+  .footer___list-item {
+    margin: 0 10px;
+  }
+}
+
+.footer__list-icon {
+  font-size: 40px;
+  transition: color 0.5s ease;
+  color: $white;
+  -webkit-box-reflect: below 2px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.footer__headings {
+  font-size: $textSmall;
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.footer__parrafos {
+  font-size: $textXsmall;
+  line-height: $textMedium;
+}
+
+.footer__iframe-location {
+  display: none;
+}
+
+.footer__bottom {
+  background-color: $darkBlack;
+  width: $wth-100;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__copyright-parrafo {
+  font-size: 1.4rem;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer__author {
+  text-transform: uppercase;
+  opacity: 0.4;
+}
