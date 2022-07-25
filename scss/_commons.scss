@@ -13,7 +13,7 @@ html {
   padding: 0;
 }
 body {
-  background: url("../images/background.jpg") no-repeat fixed center;
+  background: url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: $textColor;
   font-family: "Dela Gothic One", cursive;
@@ -59,8 +59,7 @@ body {
 }
 
 .menu__beer-container,
-.menu__pizza-container,
-.calendar__container {
+.menu__pizza-container {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;

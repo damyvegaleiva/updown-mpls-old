@@ -2,24 +2,31 @@
 
 nav {
   margin-bottom: 50px;
-}
 
-.nav-bar__list-item {
-  text-align: center;
-  font-family: "tourney", sans-serif;
-  font-size: 2.5rem;
-  text-shadow: 2px 2px $neonMagenta;
-  height: 40px;
-}
-.nav-bar__list-item:not(:last-child) {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.411);
-}
-
-.nav-bar__links-list a,
-a:visited,
-a:hover {
-  text-decoration: none;
-  color: inherit;
+  .nav-bar__list-item {
+    text-align: center;
+    font-family: $fontTourney;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px $neonMagenta;
+    height: 40px;
+    &:not(:last-child) {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.411);
+    }
+  }
+  .nav-bar__links-list {
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+      &:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
 }
 
 .nav-bar__icon {
@@ -30,7 +37,7 @@ a:hover {
   background-image: url("../images/hamburguer.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: $size-100;
+  background-size: 100%;
   opacity: 0.7;
 }
 
@@ -40,9 +47,9 @@ a:hover {
 }
 
 .toggler-icon--color {
-  border: 2.5px solid white;
+  border: 2.5px solid $white;
 }
 
 .nav-bar__bg-color {
-  background: rgb(0, 0, 0);
+  background: $darkBlack;
 }

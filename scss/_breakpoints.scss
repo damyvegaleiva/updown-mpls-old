@@ -28,7 +28,31 @@
   }
 
   .header__location {
-    font-size: 5rem;
+    font-size: $textLarge;
+  }
+
+  nav {
+    .nav-bar__list-item {
+      box-shadow: -2px -2px 0px $neonMagenta, 2px 2px 0px $neonCyan;
+      width: 245px;
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: $white;
+        color: $darkBlack;
+        box-shadow: -2px -2px 0px $neonCyan, 2px 2px 0px $neonMagenta;
+        transition: background-color 0.5s ease;
+      }
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .nav-bar__links-list {
+    background: $lightBlack;
   }
 
   .nav-bar__logo {
@@ -36,40 +60,16 @@
   }
 
   .nav-bar__bg-color {
-    background: rgba(17, 11, 11, 0.5);
-  }
-
-  .nav-bar__list-item {
-    box-shadow: -2px -2px 0px #af0e7c, 2px 2px 0px #028299;
-    width: 245px;
-  }
-  .nav-bar__list-item:not(:last-child) {
-    border-bottom: none;
+    background: $lightBlack;
   }
 
   .nav-bar__list-item--not-current {
-    background: rgba(1, 1, 1, 0.5);
+    background: $lightBlack;
   }
 
   .nav-bar__list-item--current {
-    background-color: white;
-    color: black;
-  }
-
-  .nav-bar__list-item:hover {
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    box-shadow: -2px -2px 0px #028299, 2px 2px 0px #af0e7c;
-    transition: background-color 0.5s ease;
-  }
-
-  .nav-bar__list-item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  .nav-bar__links-list {
-    background: rgba(1, 1, 1, 0.5);
+    background-color: $white;
+    color: $darkBlack;
   }
 
   .article-one {
@@ -87,6 +87,10 @@
   .article-one-subhead {
     grid-area: subhead;
     text-align: left;
+  }
+
+  [class*="parrafo-"] {
+    font-size: 2.5rem;
   }
 
   .aside-one {
@@ -159,6 +163,10 @@
     max-width: 1300px;
   }
 
+  .contact-us__box {
+    width: auto;
+  }
+
   /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
 
   .privacy-policy__heading {
@@ -170,8 +178,10 @@
     font-size: 1.8em;
   }
 
-  .accordion-body p {
-    text-align: left;
+  .accordion-body {
+    p {
+      text-align: left;
+    }
   }
 }
 
@@ -218,6 +228,7 @@
   }
   [class*="parrafo-"] {
     text-align: left;
+    font-size: $textSmall;
   }
 
   .parrafo-one {
@@ -253,10 +264,17 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    align-items: center;
   }
 
-  .footer__list-social a:hover .footer__list-icon {
-    color: #0398b3;
+  .footer__parrafos {
+    font-size: $textXsmall;
+  }
+
+  .footer__list-icon {
+    &:hover {
+      color: $neonTextColor;
+    }
   }
 
   .footer__iframe-location {
@@ -290,6 +308,10 @@
     height: 100%;
     margin: 0 0 0 25px;
   }
+
+  .contact-us__right {
+    padding: 25px 40px;
+  }
 }
 /*? -------------------------------- CUARTO BREAK-POINT -------------------------------- */
 
@@ -311,7 +333,7 @@
   }
 
   .carousel__heading {
-    font-size: 5em;
+    font-size: $textLarge;
   }
 
   .carousel__text {
