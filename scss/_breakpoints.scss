@@ -81,20 +81,25 @@
       "pf1 pf2"
       "pf3 pf4"
       "pf5 pf6";
-    width: 95%;
   }
 
   .article-one-subhead {
     grid-area: subhead;
     text-align: left;
-  }
-
-  [class*="parrafo-"] {
-    font-size: 2.5rem;
+    font-size: 7.5rem;
   }
 
   .aside-one {
     grid-area: aside;
+    width: 600px;
+    height: 900px;
+    .aside-one__parrafo {
+      margin-top: 600px;
+      font-size: 5.5rem;
+      .aside-one__photo-by {
+        font-size: 1.5rem;
+      }
+    }
   }
 
   .parrafo-one {
@@ -114,6 +119,13 @@
   }
   .article-two {
     width: 95%;
+  }
+  .article-two__headline {
+    font-size: 7rem;
+  }
+
+  .footer__parrafos {
+    font-size: $textSmall;
   }
 
   /* -------------------------------- MENU.HTML -------------------------------- */
@@ -215,7 +227,6 @@
       "pf2 pf3"
       "pf4 pf5"
       "pf6 pf6";
-    width: 95%;
   }
 
   .article-one-subhead {
@@ -226,6 +237,7 @@
     grid-area: aside;
     margin: auto;
   }
+
   [class*="parrafo-"] {
     text-align: left;
     font-size: $textSmall;
@@ -264,7 +276,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .footer__parrafos {

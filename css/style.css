@@ -283,7 +283,7 @@ nav .nav-bar__links-list a:hover {
 /* --------------------------- SECTION I --------------------------- */
 .article-one {
   background: rgba(1, 1, 1, 0.5);
-  width: 90%;
+  width: 95%;
   max-width: 1700px;
   height: auto;
   margin: 0 auto 150px;
@@ -298,7 +298,7 @@ nav .nav-bar__links-list a:hover {
 }
 
 .article-one-subhead {
-  font-size: 7.5rem;
+  font-size: 4.5rem;
   text-shadow: 5px 2px #6a5acd;
   color: rgb(235, 235, 235);
   border-left: 3px solid #af0e7c;
@@ -313,7 +313,7 @@ nav .nav-bar__links-list a:hover {
 }
 
 [class*=parrafo-] {
-  font-size: 3em;
+  font-size: 2.5em;
   color: rgb(196, 196, 196);
   text-shadow: 1px 1px #af0e7c;
   padding: 25px;
@@ -349,22 +349,24 @@ nav .nav-bar__links-list a:hover {
 
 .aside-one {
   background-image: url("https://assets.codepen.io/t-1/freddy-g-lhy1lY3CyLI-unsplash.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   font-size: 5rem;
-  width: 600px;
-  height: 900px;
+  width: 350px;
+  height: 500px;
   margin: 5px 20px;
   border-radius: 5px;
   border: 3px solid #f5deb3;
   order: 2;
+  margin: auto;
 }
 .aside-one .aside-one__parrafo {
-  margin-top: 600px;
+  font-size: 3rem;
   background-color: transparent;
   background-color: rgba(1, 1, 1, 0.5);
   text-shadow: 5px 2px #af0e7c;
+  margin-top: 325px;
 }
 .aside-one .aside-one__parrafo .aside-one__photo-by {
   font-size: 1rem;
@@ -378,7 +380,7 @@ nav .nav-bar__links-list a:hover {
 .article-two {
   position: relative;
   margin: 0 auto 150px;
-  width: 85%;
+  width: 98%;
   max-width: 1920px;
 }
 .article-two:before {
@@ -397,7 +399,7 @@ nav .nav-bar__links-list a:hover {
 }
 
 .article-two__headline {
-  font-size: 7rem;
+  font-size: 4.5rem;
   text-shadow: 5px 2px #7d50b9;
   border-left: 5px solid #af0e7c;
   border-right: 5px solid #028299;
@@ -924,17 +926,23 @@ events-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "subhead aside" "pf1 pf2" "pf3 pf4" "pf5 pf6";
-    width: 95%;
   }
   .article-one-subhead {
     grid-area: subhead;
     text-align: left;
-  }
-  [class*=parrafo-] {
-    font-size: 2.5rem;
+    font-size: 7.5rem;
   }
   .aside-one {
     grid-area: aside;
+    width: 600px;
+    height: 900px;
+  }
+  .aside-one .aside-one__parrafo {
+    margin-top: 600px;
+    font-size: 5.5rem;
+  }
+  .aside-one .aside-one__parrafo .aside-one__photo-by {
+    font-size: 1.5rem;
   }
   .parrafo-one {
     grid-area: pf1;
@@ -950,6 +958,12 @@ events-container {
   }
   .article-two {
     width: 95%;
+  }
+  .article-two__headline {
+    font-size: 7rem;
+  }
+  .footer__parrafos {
+    font-size: 2rem;
   }
   /* -------------------------------- MENU.HTML -------------------------------- */
   .menu {
@@ -1020,7 +1034,6 @@ events-container {
   }
   .article-one {
     grid-template-areas: "subhead aside" "pf1 aside" "pf2 pf3" "pf4 pf5" "pf6 pf6";
-    width: 95%;
   }
   .article-one-subhead {
     grid-area: subhead;
@@ -1059,7 +1072,7 @@ events-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
   }
   .footer__parrafos {
     font-size: 1.5rem;

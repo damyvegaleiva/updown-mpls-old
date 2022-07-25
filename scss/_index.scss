@@ -3,7 +3,7 @@
 
 .article-one {
   background: $lightBlack;
-  width: 90%;
+  width: 95%;
   max-width: 1700px;
   height: auto;
   margin: 0 auto 150px;
@@ -18,7 +18,7 @@
 }
 
 .article-one-subhead {
-  font-size: 7.5rem;
+  font-size: 4.5rem;
   text-shadow: 5px 2px #6a5acd;
   color: rgb(235, 235, 235);
   border-left: 3px solid $neonMagenta;
@@ -33,7 +33,7 @@
 }
 
 [class*="parrafo-"] {
-  font-size: 3em;
+  font-size: 2.5em;
   color: rgb(196, 196, 196);
   text-shadow: 1px 1px $neonMagenta;
   padding: 25px;
@@ -68,21 +68,23 @@
 
 .aside-one {
   background-image: url("https://assets.codepen.io/t-1/freddy-g-lhy1lY3CyLI-unsplash.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   font-size: $textLarge;
-  width: 600px;
-  height: 900px;
+  width: 350px;
+  height: 500px;
   margin: 5px 20px;
   border-radius: 5px;
   border: 3px solid $borderColor;
   order: 2;
+  margin: auto;
   .aside-one__parrafo {
-    margin-top: 600px;
+    font-size: 3rem;
     background-color: transparent;
     background-color: $lightBlack;
     text-shadow: 5px 2px $neonMagenta;
+    margin-top: 325px;
     .aside-one__photo-by {
       font-size: 1rem;
       background-color: $darkBlack;
@@ -98,7 +100,7 @@
 .article-two {
   position: relative;
   margin: 0 auto 150px;
-  width: 85%;
+  width: 98%;
   max-width: 1920px;
   &:before {
     content: "";
@@ -117,7 +119,7 @@
 }
 
 .article-two__headline {
-  font-size: 7rem;
+  font-size: 4.5rem;
   text-shadow: 5px 2px $subheadTextShadow;
   border-left: 5px solid $neonMagenta;
   border-right: 5px solid $neonCyan;
