@@ -16,13 +16,20 @@
   56%,
   99%,
   100% {
-    text-shadow: -0.1rem -0.1rem 1rem $white, 0.2rem 0.2rem 1rem $white,
-      0 0 2rem $neonTextColor, 0 0 4rem $neonTextColor, 0 0 6rem $neonTextColor,
-      0 0 8rem $neonTextColor, 0 0 10rem $neonTextColor;
+    text-shadow: -0.1rem -0.1rem 1rem map-get($map: $colorPalette, $key: "white"),
+      0.2rem 0.2rem 1rem map-get($map: $colorPalette, $key: "white"),
+      0 0 2rem map-get($map: $colorPalette, $key: "neonCyan"),
+      0 0 4rem map-get($map: $colorPalette, $key: "neonCyan"),
+      0 0 6rem map-get($map: $colorPalette, $key: "neonCyan"),
+      0 0 8rem map-get($map: $colorPalette, $key: "neonCyan"),
+      0 0 10rem map-get($map: $colorPalette, $key: "neonCyan");
 
-    box-shadow: 0 0 0.5rem $white, inset 0 0 0.5rem $white,
-      0 0 2rem $neonMagenta, inset 0 0 2rem $neonMagenta, 0 0 4rem $neonMagenta,
-      inset 0 0 4rem $neonMagenta;
+    box-shadow: 0 0 0.5rem map-get($map: $colorPalette, $key: "white"),
+      inset 0 0 0.5rem map-get($map: $colorPalette, $key: "white"),
+      0 0 2rem map-get($map: $colorPalette, $key: "magenta"),
+      inset 0 0 2rem map-get($map: $colorPalette, $key: "magenta"),
+      0 0 4rem map-get($map: $colorPalette, $key: "magenta"),
+      inset 0 0 4rem map-get($map: $colorPalette, $key: "magenta");
   }
 
   20%,

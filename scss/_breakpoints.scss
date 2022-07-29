@@ -33,16 +33,18 @@
 
   nav {
     .nav-bar__list-item {
-      box-shadow: -2px -2px 0px $neonMagenta, 2px 2px 0px $neonCyan;
+      box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "magenta"),
+        2px 2px 0px map-get($map: $colorPalette, $key: "neonCyan");
       width: 245px;
       &:not(:last-child) {
         border-bottom: none;
       }
       &:hover {
         cursor: pointer;
-        background-color: $white;
-        color: $darkBlack;
-        box-shadow: -2px -2px 0px $neonCyan, 2px 2px 0px $neonMagenta;
+        background: map-get($map: $colorPalette, $key: "white");
+        color: map-get($map: $colorPalette, $key: "darkBlack");
+        box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "neonCyan"),
+          2px 2px 0px map-get($map: $colorPalette, $key: "magenta");
         transition: background-color 0.5s ease;
       }
       &:not(:last-child) {
@@ -52,7 +54,7 @@
   }
 
   .nav-bar__links-list {
-    background: $lightBlack;
+    background: map-get($map: $colorPalette, $key: "lightBlack");
   }
 
   .nav-bar__logo {
@@ -60,16 +62,16 @@
   }
 
   .nav-bar__bg-color {
-    background: $lightBlack;
+    background: map-get($map: $colorPalette, $key: "lightBlack");
   }
 
   .nav-bar__list-item--not-current {
-    background: $lightBlack;
+    background: map-get($map: $colorPalette, $key: "lightBlack");
   }
 
   .nav-bar__list-item--current {
-    background-color: $white;
-    color: $darkBlack;
+    background-color: map-get($map: $colorPalette, $key: "white");
+    color: map-get($map: $colorPalette, $key: "darkBlack");
   }
 
   .article-one {
@@ -217,7 +219,7 @@
   }
 
   .header__insert-coin {
-    display: flex;
+    @include display-f(row, wrap, center, center);
   }
 
   .article-one {
@@ -272,11 +274,17 @@
     font-size: 9rem;
   }
 
-  .footer__container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+  .footer__hours,
+  .footer__contact,
+  .footer__address,
+  .footer__content {
+    padding: 25px;
     align-items: flex-start;
+    text-align: start;
+  }
+
+  .footer__container {
+    @include display-f(row, nowrap, space-around, flex-start);
   }
 
   .footer__parrafos {
@@ -285,7 +293,7 @@
 
   .footer__list-icon {
     &:hover {
-      color: $neonTextColor;
+      color: map-get($map: $colorPalette, $key: "neonCyan");
     }
   }
 
@@ -312,8 +320,6 @@
   .contact-us__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
   }
 
   .contact-us__left {

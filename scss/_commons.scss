@@ -5,6 +5,7 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+
 *,
 *:before,
 *:after {
@@ -15,23 +16,24 @@ html {
 body {
   background: url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: $textColor;
-  font-family: "Dela Gothic One", cursive;
+  color: map-get($map: $colorPalette, $key: "white");
+  font-family: $fontDeLaGothic;
   font-weight: normal;
   display: grid;
 }
 
 .header__updown,
 .header__location {
-  color: $neonTextColor;
+  color: map-get($map: $colorPalette, $key: "neonCyan");
 }
+
 .headline-pages {
   font-size: 7.5rem;
-  text-shadow: 5px 2px $subheadTextShadow;
-  color: $white;
-  border-left: 3px solid $neonMagenta;
-  border-right: 3px solid $neonCyan;
-  background: $lightBlack;
+  text-shadow: 5px 2px map-get($map: $colorPalette, $key: "purple");
+  color: map-get($map: $colorPalette, $key: "white");
+  border-left: 3px solid map-get($map: $colorPalette, $key: "magenta");
+  border-right: 3px solid map-get($map: $colorPalette, $key: "neonCyan");
+  background: map-get($map: $colorPalette, $key: "lightBlack");
   text-align: center;
   padding: 0 15px;
   text-decoration: underline;
@@ -42,7 +44,7 @@ body {
 
 .menu__image,
 .calendar__calendar-iframe {
-  border: 5px solid $borderColor;
+  border: 5px solid map-get($map: $colorPalette, $key: "borderWheat");
   border-radius: 5px;
 }
 
@@ -53,14 +55,13 @@ body {
 .calendar__container,
 .gallery,
 .carousel-container--margin {
-  border: 1.5px solid $borderArticleColor;
+  border: 1.5px solid map-get($map: $colorPalette, $key: "borderContainer");
   border-radius: 25px;
-  box-shadow: -1px 1px 15px $borderArticleColor;
+  box-shadow: -1px 1px 15px
+    map-get($map: $colorPalette, $key: "borderContainer");
 }
 
 .menu__beer-container,
 .menu__pizza-container {
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
 }

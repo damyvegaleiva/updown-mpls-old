@@ -7,7 +7,7 @@ nav {
     text-align: center;
     font-family: $fontTourney;
     font-size: 2.5rem;
-    text-shadow: 2px 2px $neonMagenta;
+    text-shadow: 2px 2px map-get($map: $colorPalette, $key: "purple");
     height: 40px;
     &:not(:last-child) {
       border-bottom: 2px solid rgba(255, 255, 255, 0.411);
@@ -47,9 +47,9 @@ nav {
 }
 
 .toggler-icon--color {
-  border: 2.5px solid $white;
+  border: 2.5px solid map-get($map: $colorPalette, $key: "white");
 }
 
 .nav-bar__bg-color {
-  background: $darkBlack;
+  background: map-get($map: $colorPalette, $key: "darkBlack");
 }

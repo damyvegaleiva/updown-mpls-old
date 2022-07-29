@@ -2,7 +2,7 @@
 /* --------------------------- SECTION I --------------------------- */
 
 .article-one {
-  background: $lightBlack;
+  background: map-get($map: $colorPalette, $key: "lightBlack");
   width: 95%;
   max-width: 1700px;
   height: auto;
@@ -19,10 +19,10 @@
 
 .article-one-subhead {
   font-size: 4.5rem;
-  text-shadow: 5px 2px #6a5acd;
-  color: rgb(235, 235, 235);
-  border-left: 3px solid $neonMagenta;
-  border-right: 3px solid $neonCyan;
+  text-shadow: 5px 2px map-get($map: $colorPalette, $key: "purple");
+  color: map-get($map: $colorPalette, $key: "white");
+  border-left: 3px solid map-get($map: $colorPalette, $key: "magenta");
+  border-right: 3px solid map-get($map: $colorPalette, $key: "cyan");
   padding: 0 15px;
   text-align: center;
   order: 1;
@@ -33,11 +33,11 @@
 }
 
 [class*="parrafo-"] {
-  font-size: 2.5em;
-  color: rgb(196, 196, 196);
-  text-shadow: 1px 1px $neonMagenta;
+  font-size: 2em;
+  color: map-get($map: $colorPalette, $key: "text");
+  text-shadow: 1px 1px map-get($map: $colorPalette, $key: "purple");
   padding: 25px;
-  box-shadow: -3px 1px 10px $neonTextColor;
+  box-shadow: -3px 1px 10px map-get($map: $colorPalette, $key: "cyan");
   border-radius: 5px;
   margin: auto;
   text-align: center;
@@ -76,19 +76,18 @@
   height: 500px;
   margin: 5px 20px;
   border-radius: 5px;
-  border: 3px solid $borderColor;
+  border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
   order: 2;
   margin: auto;
   .aside-one__parrafo {
     font-size: 3rem;
-    background-color: transparent;
-    background-color: $lightBlack;
-    text-shadow: 5px 2px $neonMagenta;
+    background: map-get($map: $colorPalette, $key: "lightBlack");
+    text-shadow: 5px 2px map-get($map: $colorPalette, $key: "magenta");
     margin-top: 325px;
     .aside-one__photo-by {
       font-size: 1rem;
-      background-color: $darkBlack;
-      text-shadow: 2px 1px $neonMagenta;
+      background: map-get($map: $colorPalette, $key: "darkBlack");
+      text-shadow: 2px 1px map-get($map: $colorPalette, $key: "magenta");
       display: block;
     }
   }
@@ -120,10 +119,10 @@
 
 .article-two__headline {
   font-size: 4.5rem;
-  text-shadow: 5px 2px $subheadTextShadow;
-  border-left: 5px solid $neonMagenta;
-  border-right: 5px solid $neonCyan;
-  background: $lightBlack;
+  text-shadow: 5px 2px map-get($map: $colorPalette, $key: "purple");
+  border-left: 5px solid map-get($map: $colorPalette, $key: "magenta");
+  border-right: 5px solid map-get($map: $colorPalette, $key: "cyan");
+  background: map-get($map: $colorPalette, $key: "lightBlack");
   padding: 50px;
   margin: auto;
   text-align: center;
@@ -138,7 +137,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 50px auto;
-  border: 3px solid $borderColor;
+  border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
   .article-two__slides {
     width: 500%;
     height: 500px;
@@ -167,13 +166,13 @@
   display: flex;
   justify-content: center;
   .manual-btn {
-    border: 2px solid $white;
+    border: 2px solid map-get($map: $colorPalette, $key: "white");
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
     &:hover {
-      background-color: $sliderBtnColor;
+      background: map-get($map: $colorPalette, $key: "sliderCyan");
     }
     &:not(:last-child) {
       margin-right: 40px;
@@ -213,7 +212,7 @@
   justify-content: center;
   margin-top: 460px;
   .article-two__slider--auto-btn {
-    border: 2px solid $white;
+    border: 2px solid map-get($map: $colorPalette, $key: "white");
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -229,25 +228,25 @@
 }
 
 #radio1:checked ~ .article-two__slider--navigation-auto .auto-btn1 {
-  background: $sliderBtnColor;
+  background: map-get($map: $colorPalette, $key: "sliderCyan");
 }
 
 #radio2:checked ~ .article-two__slider--navigation-auto .auto-btn2 {
-  background: $sliderBtnColor;
+  background: map-get($map: $colorPalette, $key: "sliderCyan");
 }
 
 #radio3:checked ~ .article-two__slider--navigation-auto .auto-btn3 {
-  background: $sliderBtnColor;
+  background: map-get($map: $colorPalette, $key: "sliderCyan");
 }
 
 #radio4:checked ~ .article-two__slider--navigation-auto .auto-btn4 {
-  background: $sliderBtnColor;
+  background: map-get($map: $colorPalette, $key: "sliderCyan");
 }
 
 #radio5:checked ~ .article-two__slider--navigation-auto .auto-btn5 {
-  background: $sliderBtnColor;
+  background: map-get($map: $colorPalette, $key: "sliderCyan");
 }
 
 #radio6:checked ~ .article-two__slider--navigation-auto .auto-btn6 {
-  background: $sliderBtnColor;
+  background: map-get($map: $colorPalette, $key: "sliderCyan");
 }

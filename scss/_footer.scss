@@ -1,9 +1,9 @@
 /* -------------------- FOOTER -------------------- */
 
 .footer {
-  background: $darkBlack;
-  border-top: solid 3px $darkBlack;
-  text-shadow: 1px 1px $neonMagenta;
+  background: map-get($map: $colorPalette, $key: "darkBlack");
+  border-top: solid 3px map-get($map: $colorPalette, $key: "darkBlack");
+  text-shadow: 1px 1px map-get($map: $colorPalette, $key: "purple");
 }
 
 .footer__container {
@@ -18,8 +18,8 @@
 }
 
 .footer__content {
-  border-right: 3px solid $neonCyan;
-  border-left: 3px solid $neonCyan;
+  border-right: 3px solid map-get($map: $colorPalette, $key: "neonCyan");
+  border-left: 3px solid map-get($map: $colorPalette, $key: "neonCyan");
   grid-area: cont;
 }
 
@@ -29,6 +29,7 @@
 .footer__contact {
   grid-area: contact;
 }
+
 .footer__address {
   grid-area: address;
 }
@@ -38,11 +39,8 @@
 .footer__address,
 .footer__content {
   height: 100%;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  padding: 20px;
+  @include display-f(column, wrap, flex-start, center);
   text-align: center;
 }
 
@@ -70,7 +68,7 @@
 .footer__list-icon {
   font-size: 40px;
   transition: color 0.5s ease;
-  color: $white;
+  color: map-get($map: $colorPalette, $key: "white");
   -webkit-box-reflect: below 2px
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
@@ -83,7 +81,7 @@
 }
 
 .footer__parrafos {
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: $textMedium;
 }
 
@@ -92,7 +90,7 @@
 }
 
 .footer__bottom {
-  background-color: $darkBlack;
+  background: map-get($map: $colorPalette, $key: "darkBlack");
   width: 100%;
   padding: 20px 0;
   text-align: center;

@@ -5,36 +5,32 @@
 
 .contact-us__container {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-f(row, wrap, center, center);
   width: 100%;
   height: 100%;
-  padding: 20px 100px;
   font-size: $textXsmall;
   margin-bottom: 250px;
-}
-
-.contact-us__container:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../images/alt-background.jpg") no-repeat center;
-  background-size: cover;
-  z-index: -1;
-  filter: blur(5px);
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/alt-background.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+  }
 }
 
 .contact-us__box {
   width: 500px;
   max-width: 1080px;
-  background-color: $lightBlack;
-  box-shadow: 0px 0px 19px 5px $lightBlack;
+  background: map-get($map: $colorPalette, $key: "lightBlack");
+  box-shadow: 0px 0px 19px 5px map-get($map: $colorPalette, $key: "lightBlack");
   border-radius: 5px;
-  border: 2px solid $borderColor;
+  border: 2px solid map-get($map: $colorPalette, $key: "borderWheat");
   margin-bottom: 100px;
 }
 
@@ -53,21 +49,20 @@
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  text-shadow: 5px 2px $subheadTextShadow;
-  color: $white;
+  text-shadow: 4px 2px map-get($map: $colorPalette, $key: "purple");
+  color: map-get($map: $colorPalette, $key: "white");
   text-align: center;
-}
-
-.contact-us__heading:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 2px;
-  background-color: $neonTextColor;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background: map-get($map: $colorPalette, $key: "cyan");
+  }
 }
 
 .contact-us__city-select,
@@ -84,17 +79,17 @@
   width: 100%;
   padding: 5px 10px;
   outline: none;
-  border: 2px solid $darkBlack;
-  background-color: $white;
+  border: 2px solid map-get($map: $colorPalette, $key: "darkBlack");
+  background: map-get($map: $colorPalette, $key: "white");
   font-size: $textSmall;
   margin-bottom: 22px;
   transition: 0.3s;
   &:hover {
-    background-color: rgb(204, 204, 204);
+    background: map-get($map: $colorPalette, $key: "borderContainer");
   }
   &:focus {
-    background-color: #fff;
-    border: 2px solid rgba(30, 85, 250, 0.47);
+    background: map-get($map: $colorPalette, $key: "white");
+    border: 2px solid map-get($map: $colorPalette, $key: "purple");
   }
 }
 
@@ -102,27 +97,35 @@
   min-height: 150px;
 }
 
-.contact-us__btn {
+// ----------------EXTEND
+.btn-contact {
   font-family: $fontPressStart;
   width: 100%;
   padding: 8px 16px;
   font-size: $textSmall;
   text-transform: uppercase;
-  cursor: pointer;
   outline: none;
   border: none;
   transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
 }
+// ----------------EXTEND
+
 .contact-us__btn--submit {
-  color: white;
-  background-color: $neonTextColor;
+  @extend .btn-contact;
+  color: map-get($map: $colorPalette, $key: "white");
+  background-color: map-get($map: $colorPalette, $key: "neonCyan");
   margin-bottom: 5px;
+  &:hover {
+    background: map-get($map: $colorPalette, $key: "cyan");
+  }
 }
 
-.contact-us__btn--submit:hover {
-  background-color: $neonCyan;
-}
-
-.contact-us__btn--cancel:hover {
-  background-color: $borderArticleColor;
+.contact-us__btn--cancel {
+  @extend .btn-contact;
+  &:hover {
+    background: map-get($map: $colorPalette, $key: "borderContainer");
+  }
 }

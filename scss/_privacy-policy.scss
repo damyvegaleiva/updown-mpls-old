@@ -12,8 +12,8 @@
 
 .privacy-policy__heading,
 .faqs-footer {
-  background: $lightBlack;
-  text-shadow: 1px 1px $neonMagenta;
+  background: map-get($map: $colorPalette, $key: "lighBlack");
+  text-shadow: 1px 1px map-get($map: $colorPalette, $key: "magenta");
 }
 
 .carousel-container--margin {
@@ -25,51 +25,51 @@
 
 .carousel__heading {
   font-size: $textSmall;
-  text-shadow: 1px 1px $neonMagenta;
+  text-shadow: 1px 1px map-get($map: $colorPalette, $key: "magenta");
 }
 
 .carousel__text {
   font-size: $textSmall;
-  color: $white;
-  text-shadow: 1px 1px $neonMagenta;
+  color: map-get($map: $colorPalette, $key: "white");
+  text-shadow: 1px 1px map-get($map: $colorPalette, $key: "magenta");
   display: none;
 }
 
 .carousel__text--bg {
-  background: $lightBlack;
+  background: map-get($map: $colorPalette, $key: "lightBlack");
   backdrop-filter: blur(8px);
 }
 
 .accordion {
-  --bs-accordion-bg: $lightBlack;
+  --bs-accordion-bg: map-get($map: $colorPalette, $key: "lightBlack");
   backdrop-filter: blur(8px);
 }
 
 .accordion-item {
   font-size: 1em;
-  border: 2px solid $darkBlack;
+  border: 2px solid map-get($map: $colorPalette, $key: "darkBlack");
 }
 
 .accordion-button {
   font-size: 1.2em;
-  background: $white;
+  background: map-get($map: $colorPalette, $key: "white");
   &:not(.collapsed) {
-    color: $white;
-    background: $darkBlack;
+    color: map-get($map: $colorPalette, $key: "white");
+    background: map-get($map: $colorPalette, $key: "darkBlack");
   }
 }
 
 .accordion-body {
   p {
     color: rgb(196, 196, 196);
-    text-shadow: 1px 1px #af0e7c;
+    text-shadow: 1px 1px map-get($map: $colorPalette, $key: "magenta");
     font-size: 2em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     a {
-      color: $white;
-      text-shadow: 1px 1px $neonMagenta;
+      color: map-get($map: $colorPalette, $key: "white");
+      text-shadow: 1px 1px map-get($map: $colorPalette, $key: "magenta");
     }
   }
 }
