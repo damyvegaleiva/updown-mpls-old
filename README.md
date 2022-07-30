@@ -29,7 +29,7 @@
 
 "Check our pizza menu you can get it by the slice or you can also get a whole pizza, we also have 60 tap beers including a large selection of taps to choose from."
 
-~keywords: En este pagina use las siguientes palabras claves "menu, beer, pizza".
+~keywords: En este pagina use las siguientes palabras claves "menu, beer, pizza, food, drinks".
 
 ~Encabezado/h1: El texto que use en este encabezado es "Menu".
 
@@ -38,7 +38,7 @@
 
 "Events, fun & more...be up to date with our calendar events where we will be posting any fun upcoming event."
 
-~keywords: La unica palabra clave que use fue "events".
+~keywords: La unica palabra clave que use fue "events, calendar, dates, times".
 
 ~Encabezado/h1: El encabezado de este pagina es "Events".
 
@@ -47,7 +47,7 @@
 
 "Check our new gallery section and see if you find yourself. Featuring pictures of updown, people, drinks and more...maybe next time you will be in it."
 
-~keywords: Unica palabra usada como clave fue "gallery".
+~keywords: Unica palabra usada como clave fue "gallery, pictures, collage, games, people".
 
 ~Encabezado/h1: El nombre del encabezado es "Gallery".
 
