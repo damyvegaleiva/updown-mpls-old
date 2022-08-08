@@ -1,7 +1,7 @@
 {
-  "name": "proyecto-coderhouse---vega-leiva",
+  "name": "proyecto-coder-house",
   "version": "1.0.0",
-  "description": "Creacion de ReadMe",
+  "description": "Proyecto creado para la cursada de desarollo web de CoderHouse.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
