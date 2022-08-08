@@ -538,6 +538,7 @@ nav .nav-bar__links-list a:hover {
 .menu__beer-container {
   background: url("../images/beer-taps.jpg");
   background-size: cover;
+  background-position-x: 30%;
 }
 
 .menu__pizza-container {
