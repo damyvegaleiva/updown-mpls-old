@@ -1,16 +1,24 @@
 {
-  "name": "modelo",
+  "name": "proyecto-coder-house",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto creado para la cursada de desarollo web de CoderHouse.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
     "sass:watch": "sass --watch scss/style.scss  css/style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damyvegaleiva/ProyectoCoderHouse.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damyvegaleiva/ProyectoCoderHouse/issues"
+  },
+  "homepage": "https://github.com/damyvegaleiva/ProyectoCoderHouse#readme",
   "dependencies": {
-    "sass": "^1.54.4"
+    "sass": "^1.54.0"
   }
 }
