@@ -5,7 +5,7 @@
 ________________________________________________________________________________________
 
 ## Introducción:
-El proyecto es una idea propia del sitio para el bar donde trabajo. Conformado por 6 páginas: [Index](https://damyvegaleiva.github.io/ProyectoCoderHouse/), [Menu](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/menu.html#menu), [Events](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/events.html#events), [Gallery](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/gallery.html#gallery), [Contact](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/contact.html#contact) y [Privacy & Policy](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/privacy-policy.html).
+El proyecto es una idea propia del sitio para el bar donde trabajo. Conformado por 6 páginas: [index](https://damyvegaleiva.github.io/ProyectoCoderHouse/), [menu](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/menu.html#menu), [events](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/events.html#events), [gallery](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/gallery.html#gallery), [contact](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/contact.html#contact) y [privacy & policy](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/privacy-policy.html).
 Este es mi primer proyecto de desarrollo web, el estilo 90's/retro/neon del proyecto esta basado a la tematica del bar el cual esta basado en los 90's con Arcades de esa misma epoca tambien.
 
 ## Descripción de las páginas:
@@ -25,6 +25,7 @@ La seccion Gallery cuenta con fotos del lugar hecha con grid, bootstrap y efecto
 Un formulario hecho para estar en contacto con los clientes con la posibilidad de dejar un mensaje con sugerencias y demas.
 
 - ### [Privacy & Policy](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/privacy-policy.html)
+Secion de politicas de privacidad con un carrusel de imagenes y un acordeon con toda la informacion necesaria.
 
 ## Herramientas utilizadas:
 Las Herramientas utilizadas en este proyecto son:
