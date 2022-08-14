@@ -1,189 +1,195 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="shorcut icon" type="image/jpg" href="../images/fav-icon.jpg" />
-  <title>Contact | Up-Down Minneapolis</title>
-  <meta name="description"
-    content="Have any questions, want to subscribe to our news, or you have a suggestion? Fill out this form and send us any requests. We will try our best! ">
-  <meta name="keywords" content="contact, submit, requests, form">
-  <meta name="author" content="Damy J. Vega Leiva">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shorcut icon" type="image/jpg" href="../images/fav-icon.jpg" />
+    <title>Contact | Up-Down Minneapolis</title>
+    <meta name="description"
+        content="Have any questions, want to subscribe to our news, or you have a suggestion? Fill out this form and send us any requests. We will try our best! ">
+    <meta name="keywords" content="contact, submit, requests, form">
+    <meta name="author" content="Damy J. Vega Leiva">
 </head>
 
 <body>
 
-  <!--? ---------------------------- HEADER ---------------------------- -->
+    <!--? ---------------------------- HEADER ---------------------------- -->
 
-  <header>
-    <div class="header-container">
-      <h2 class="header__updown">Up- <br> Down </h2>
-      <p class="header__location">Minneapolis</p>
-      <div>
-        <p class="header__insert-coin"> Click <a href="#contact"><img src="../images/up-down-logo.png"
-              class="header__img--size" alt="Up-Down logo"></a> Me!</p>
-      </div>
-    </div>
-  </header>
-
-  <!--? ---------------------------- NAV BAR ---------------------------- -->
-
-  <nav class="navbar sticky-top navbar-expand-md nav-bar__bg-color" id="contact">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html#home"><img src="../images/up-down-logo.png" class="nav-bar__logo"
-          alt="up-down logo"></a>
-      <button class="navbar-toggler toggler-icon--color" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="nav-bar__icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 nav-bar__links-list">
-          <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
-            <a aria-current="page" href="../index.html#home">HOME</a>
-          </li>
-          <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
-            <a href="./menu.html#menu">MENU</a>
-          </li>
-          <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
-            <a href="./events.html#events">EVENTS</a>
-          </li>
-          <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
-            <a href="./gallery.html#gallery">GALLERY</a>
-          </li>
-          <li class="nav-item nav-bar__list-item nav-bar__list-item--current">
-            <a href="./contact.html#contact">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!--? ---------------------------- CONTENT ---------------------------- -->
-
-  <main>
-    <h1 class="headline-pages contact-heading">Contact</h1>
-    <div class="contact-us__container">
-
-      <div class="contact-us__box">
-        <div class="contact-us__left"></div>
-        <div class="contact-us__right">
-          <h2 class="contact-us__heading">Contact Us / Requests</h2>
-          <form action="send.php">
-
-            <label for="name">Your Name</label>
-            <input type="text" placeholder="Your Name" class="contact-us__field" id="name" />
-
-            <label for="email">Email</label>
-            <input type="email" placeholder="Your Email" class="contact-us__field" id="email" />
-
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" placeholder="Your Phone" class="contact-us__field" id="phone-number" />
-
-            <label for="city">Choose your city:</label>
-
-            <select class="contact-us__city-select" name="city" id="city">
-              <option value="" disabled selected hidden>--Select one--</option>
-              <option value="minneapolis">Minneapolis</option>
-              <option value="desMoines">Des Moines</option>
-              <option value="kansasCity">Kansas City</option>
-              <option value="milwaukee">Milwaukee</option>
-              <option value="stLouis">St. Louis</option>
-              <option value="nashville">Nashville</option>
-              <option value="oklahomaCity">Oklahoma City</option>
-            </select>
-
-            <fieldset class="contact-us__fieldset">
-              <legend>I would like more:</legend>
-              <label for="beers">Beers</label>
-              <input type="checkbox" id="beers" value="more-beers">
-              <label for="games">Games</label>
-              <input type="checkbox" id="games" value="more-games">
-              <label for="pizzas">Pizzas</label>
-              <input type="checkbox" id="pizzas" value="more-pizzas">
-            </fieldset>
-
-
-
-            <label for="text-area">Your Message</label>
-            <textarea placeholder="Message" class="contact-us__field contact-us__area" id="text-area"></textarea>
-
-            <label class="contact-us__subscribe" for="yes-no-subscribe">Subscribe to our newsletter?</label>
-
-            <input type="radio" name="yes-no" value="yes," /> Yes
-            <input class="contact-us__subscribe--br" type="radio" name="yes-no" value="no" /> No
-
-
-            <input type="submit" value="submit" class="contact-us__btn--submit" />
-            <input type="reset" value="cancel" class="contact-us__btn--cancel" />
-          </form>
+    <header>
+        <div class="header-container">
+            <h2 class="header__updown">
+                Up- <br />
+                Down
+            </h2>
+            <p class="header__location">Minneapolis</p>
+            <div>
+                <p class="header__insert-coin"> Click <a href="#contact"><img src="../images/up-down-logo.png"
+                            class="header__img--size" alt="Up-Down logo"></a> Me!</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </main>
+    </header>
 
-  <!--? ---------------------------- FOOTER ---------------------------- -->
+    <!--? ---------------------------- NAV BAR ---------------------------- -->
 
-  <footer class="footer">
-    <div class="footer__container">
+    <nav class="navbar sticky-top navbar-expand-lg nav-bar__bg-color" id="contact">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html#home"><img src="../images/up-down-logo.png"
+                    class="nav-bar__logo" alt="up-down logo"></a>
+            <button class="navbar-toggler toggler-icon--color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="nav-bar__icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 nav-bar__links-list">
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+                        <a aria-current="page" href="../index.html#home">HOME</a>
+                    </li>
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+                        <a href="./menu.html#menu">MENU</a>
+                    </li>
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+                        <a href="./events.html#events">EVENTS</a>
+                    </li>
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+                        <a href="./gallery.html#gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--current">
+                        <a href="./contact.html#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      <div class="footer__content">
-        <h3 class="footer__heading">Up-Down Minneapolis</h3>
-        <p class="footer__social-parrafo">Follow us on our social medias. </p>
-        <ul class="footer__list-social">
-          <li class="footer___list-item"><a href="https://www.facebook.com/updownmpls" target="_blank"><i
-                class="footer__list-icon fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="footer___list-item"><a href="https://www.instagram.com/updownmpls/" target="_blank"><i
-                class="footer__list-icon fa-brands fa-instagram"></i></a>
-          </li>
-          <li class="footer___list-item"><a href="https://twitter.com/updownmpls" target="_blank"><i
-                class="footer__list-icon fa-brands fa-twitter"></i></a></li>
-        </ul>
-      </div>
+    <!--? ---------------------------- CONTENT ---------------------------- -->
 
-      <div class="footer__hours">
-        <h3 class="footer__headings">Hours</h3>
-        <p class="footer__parrafos">Mon-Fri 3pm to 2am <br />Sat-Sun 11am to 2am <br />(Must be 21+ to enter)</p>
-      </div>
+    <main class="contact-us__contenedor">
+        <h1 class="headline-pages contact-heading">Contact</h1>
+        <div class="contact-us__box">
+            <div class="contact-us__left"></div>
+            <div class="contact-us__right">
+                <h2 class="contact-us__heading">Contact Us / Requests</h2>
+                <form action="send.php">
 
-      <div class="footer__contact">
-        <h3 class="footer__headings">Contact</h3>
-        <p class="footer__parrafos"> Phone: 612-823-3487 <br /> Have a question? <br /> Shoot us an email</p>
-      </div>
-      <div class="footer__address">
-        <h3 class="footer__headings">Address</h3>
-        <p class="footer__parrafos">
-          3012 Lyndale Ave S <br>
-          Minneapolis, Minnesota 55408</p>
-      </div>
+                    <label for="name">Your Name</label>
+                    <input type="text" placeholder="Your Name" class="contact-us__field" id="name" />
 
-      <div class="footer__iframe-location">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2823.7887621133273!2d-93.287406!3d44.947962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86cc613e7aaccabc!2sUp-Down%20Minneapolis!5e0!3m2!1sen!2sus!4v1655942132986!5m2!1sen!2sus"
-          width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Your Email" class="contact-us__field" id="email" />
 
-    <div class="footer__bottom">
-      <p class="footer__copyright-parrafo">Copyright &copy2022 Up-Down Minneapolis. designed by <span
-          class="footer__author"> Damy J. Vega
-          Leiva</span></p>
-      <p><a href="../pages/privacy-policy.html" target="_blank" class="privacy-policy__link">Privacy Policy</a></p>
-    </div>
-  </footer>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" placeholder="Your Phone" class="contact-us__field" id="phone-number" />
 
-  <!--? ---------------------------- SCRIPTS ---------------------------- -->
+                    <label for="city">Choose your city:</label>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/394293560f.js" crossorigin="anonymous"></script>
+                    <select class="contact-us__city-select" name="city" id="city">
+                        <option value="" disabled selected hidden>--Select one--</option>
+                        <option value="minneapolis">Minneapolis</option>
+                        <option value="desMoines">Des Moines</option>
+                        <option value="kansasCity">Kansas City</option>
+                        <option value="milwaukee">Milwaukee</option>
+                        <option value="stLouis">St. Louis</option>
+                        <option value="nashville">Nashville</option>
+                        <option value="oklahomaCity">Oklahoma City</option>
+                    </select>
+
+                    <fieldset class="contact-us__fieldset">
+                        <legend>I would like more:</legend>
+                        <label for="beers">Beers</label>
+                        <input type="checkbox" id="beers" value="more-beers">
+                        <label for="games">Games</label>
+                        <input type="checkbox" id="games" value="more-games">
+                        <label for="pizzas">Pizzas</label>
+                        <input type="checkbox" id="pizzas" value="more-pizzas">
+                    </fieldset>
+
+
+
+                    <label for="text-area">Your Message</label>
+                    <textarea placeholder="Message" class="contact-us__field contact-us__area"
+                        id="text-area"></textarea>
+
+                    <label class="contact-us__subscribe" for="yes-no-subscribe">Subscribe to our newsletter?</label>
+
+                    <input type="radio" name="yes-no" value="yes," /> Yes
+                    <input class="contact-us__subscribe--br" type="radio" name="yes-no" value="no" /> No
+
+
+                    <input type="submit" value="submit" class="contact-us__btn--submit" />
+                    <input type="reset" value="cancel" class="contact-us__btn--cancel" />
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!--? ---------------------------- FOOTER ---------------------------- -->
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__content">
+                <h3 class="footer__heading">Up-Down Minneapolis</h3>
+                <p class="footer__social-parrafo">Follow us on our social medias. </p>
+                <ul class="footer__list-social">
+                    <li class="footer___list-item"><a href="https://www.facebook.com/updownmpls" target="_blank"><i
+                                class="footer__list-icon fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="footer___list-item"><a href="https://www.instagram.com/updownmpls/" target="_blank"><i
+                                class="footer__list-icon fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="footer___list-item"><a href="https://twitter.com/updownmpls" target="_blank"><i
+                                class="footer__list-icon fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__hours">
+                <h3 class="footer__headings">Hours</h3>
+                <p class="footer__parrafos">Mon-Fri 3pm to 2am <br />Sat-Sun 11am to 2am <br />(Must be 21+ to enter)
+                </p>
+            </div>
+            <div class="footer__contact">
+                <h3 class="footer__headings">Contact</h3>
+                <p class="footer__parrafos"> Phone: 612-823-3487 <br /> Have a question? <br /> Shoot us an email</p>
+            </div>
+            <div class="footer__address">
+                <h3 class="footer__headings">Address</h3>
+                <p class="footer__parrafos">
+                    3012 Lyndale Ave S <br>
+                    Minneapolis, Minnesota 55408</p>
+            </div>
+            <div class="footer__iframe-location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2823.7887621133273!2d-93.287406!3d44.947962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86cc613e7aaccabc!2sUp-Down%20Minneapolis!5e0!3m2!1sen!2sus!4v1655942132986!5m2!1sen!2sus"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright-parrafo">Copyright &copy2022 Up-Down Minneapolis. designed by <span
+                    class="footer__author"> Damy J. Vega
+                    Leiva</span></p>
+            <p><a href="./privacy-policy.html" target="_blank" class="privacy-policy__link">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!--? ---------------------------- SCRIPTS ---------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/394293560f.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

@@ -1,0 +1,44 @@
+/* --------------------------- HEADER ---------------------------*/
+
+header {
+  margin: 5px;
+  .header-container {
+    @include display-f(column, wrap, center, center);
+    background: url("../images/up-down-cover.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border: 0.4rem solid map-get($map: $colorPalette, $key: "white");
+    border-radius: 25px;
+    max-width: 2500px;
+    margin: 2px auto 5px;
+    animation: flicker 3.5s infinite alternate;
+    font-family: $fontTourney;
+    text-transform: uppercase;
+  }
+
+  .header__updown {
+    font-size: 6rem;
+  }
+
+  .header__location {
+    font-size: $textMedium;
+  }
+
+  .header__insert-coin {
+    font-size: $textMedium;
+    text-shadow: none;
+    -webkit-text-stroke: 1px map-get($map: $colorPalette, $key: "darkBlack");
+    -webkit-text-fill-color: rgb(255, 255, 0);
+    filter: brightness(125%);
+    animation: insert-coin 3s linear infinite;
+    display: none;
+  }
+
+  .header__img--size {
+    width: 115px;
+    height: 115px;
+    margin: auto 15px;
+  }
+}

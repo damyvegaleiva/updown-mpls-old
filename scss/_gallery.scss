@@ -1,7 +1,6 @@
 /*? -------------------------------- CSS GALLERY.HTML -------------------------------- */
 .gallery-container {
   width: 100%;
-  height: 100%;
   background: url("../images/arcades.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,12 +8,13 @@
 
 .gallery-headline {
   backdrop-filter: blur(5px);
+  border-radius: 0;
 }
 
 .gallery {
   width: 90%;
   padding: 10px;
-  margin: 0 auto 100px;
+  margin: 50px auto 100px;
   background: map-get($map: $colorPalette, $key: "lightBlack");
   display: grid;
   grid-gap: 10px;

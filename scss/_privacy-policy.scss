@@ -1,10 +1,15 @@
 /*? -------------------------------- CSS PRIVACY-POLICY.HTML -------------------------------- */
+.header-privacy {
+  margin: 0;
+}
+
 .privacy-policy__link {
   color: inherit;
   &:hover {
     text-decoration: underline;
   }
 }
+
 .privacy-policy__heading {
   font-size: 3em;
   margin-bottom: 50px;
@@ -17,7 +22,6 @@
 }
 
 .carousel-container--margin {
-  margin-top: 50px;
   margin-bottom: 25px;
   padding: 0;
   border-radius: 0;
@@ -38,11 +42,13 @@
 .carousel__text--bg {
   background: map-get($map: $colorPalette, $key: "lightBlack");
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .accordion {
   --bs-accordion-bg: map-get($map: $colorPalette, $key: "lightBlack");
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .accordion-item {

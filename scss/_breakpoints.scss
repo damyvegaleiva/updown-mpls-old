@@ -18,112 +18,107 @@
 
 @media screen and (min-width: 768px) {
   /* -------------------------------- INDEX.HTML -------------------------------- */
+  header {
+    .header-container {
+      height: 40%;
+    }
 
-  .header-container {
-    height: 600px;
-  }
+    .header__updown {
+      font-size: 10rem;
+    }
 
-  .header__updown {
-    font-size: 20rem;
-  }
-
-  .header__location {
-    font-size: $textLarge;
-  }
-
-  nav {
-    .nav-bar__list-item {
-      box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "magenta"),
-        2px 2px 0px map-get($map: $colorPalette, $key: "neonCyan");
-      width: 245px;
-      &:not(:last-child) {
-        border-bottom: none;
-      }
-      &:hover {
-        cursor: pointer;
-        background: map-get($map: $colorPalette, $key: "white");
-        color: map-get($map: $colorPalette, $key: "darkBlack");
-        box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "neonCyan"),
-          2px 2px 0px map-get($map: $colorPalette, $key: "magenta");
-        transition: background-color 0.5s ease;
-      }
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
+    .header__location {
+      font-size: $textMedium;
     }
   }
 
-  .nav-bar__links-list {
-    background: map-get($map: $colorPalette, $key: "lightBlack");
-  }
-
-  .nav-bar__logo {
-    display: none;
-  }
-
-  .nav-bar__bg-color {
-    background: map-get($map: $colorPalette, $key: "lightBlack");
-  }
-
-  .nav-bar__list-item--not-current {
-    background: map-get($map: $colorPalette, $key: "lightBlack");
-  }
-
-  .nav-bar__list-item--current {
-    background-color: map-get($map: $colorPalette, $key: "white");
-    color: map-get($map: $colorPalette, $key: "darkBlack");
+  .headline-pages {
+    font-size: 5rem;
   }
 
   .article-one {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-areas:
       "subhead aside"
       "pf1 pf2"
       "pf3 pf4"
       "pf5 pf6";
+    padding: 50px 15px;
   }
 
   .article-one-subhead {
     grid-area: subhead;
-    text-align: left;
-    font-size: 7.5rem;
+    text-align: center;
+    font-size: 4rem;
+    align-self: center;
+    line-height: 5rem;
   }
 
   .aside-one {
     grid-area: aside;
-    width: 600px;
-    height: 900px;
     .aside-one__parrafo {
-      margin-top: 600px;
-      font-size: 5.5rem;
+      font-size: 2.5rem;
       .aside-one__photo-by {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
   }
 
   .parrafo-one {
     grid-area: pf1;
+    display: block;
+    height: 100%;
   }
 
   .parrafo-two {
     grid-area: pf4;
+    height: 100%;
   }
 
   .parrafo-three {
     grid-area: pf3;
+    height: 100%;
+  }
+
+  .parrafo-four {
+    height: 100%;
+  }
+
+  .parrafo-five {
+    display: block;
+    height: 100%;
   }
 
   .parrafo-six {
     grid-area: pf2;
+    display: block;
+    height: 100%;
   }
+
   .article-two {
     width: 95%;
   }
-  .article-two__headline {
-    font-size: 7rem;
+
+  /*? -------------------------------- FOOTER -------------------------------- */
+  .footer__container {
+    flex-flow: row wrap;
+  }
+  .footer__content {
+    width: 100%;
+  }
+
+  .footer__hours {
+    width: 50%;
+  }
+
+  .footer__contact {
+    width: 50%;
+  }
+
+  .footer__address {
+    width: 100%;
   }
 
   .footer__parrafos {
@@ -135,27 +130,14 @@
   .menu {
     width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     column-gap: 25px;
-    margin: 0 auto;
-  }
-
-  .menu__beer-container {
-    width: 50%;
-  }
-
-  .menu__pizza-container {
-    width: 50%;
   }
 
   /* -------------------------------- EVENTS.HTML -------------------------------- */
 
   .calendar__calendar-iframe {
     height: 600px;
-  }
-
-  .calendar__container {
-    height: 80%;
   }
 
   /* -------------------------------- GALLERY.HTML -------------------------------- */
@@ -174,11 +156,7 @@
   }
 
   .gallery {
-    max-width: 1300px;
-  }
-
-  .contact-us__box {
-    width: auto;
+    max-width: 1200px;
   }
 
   /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
@@ -199,29 +177,87 @@
   }
 }
 
-/*? -------------------------------- THIRD BREAK-POINT -------------------------------- */
+/*? -------------------------------- TERCER BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 992px) {
+  /* -------------------------------- NAVBAR -------------------------------- */
+  nav {
+    ul {
+      width: 100%;
+      max-width: 1250px;
+    }
+    .nav-bar__list-item {
+      width: 100%;
+      box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "magenta"),
+        2px 2px 0px map-get($map: $colorPalette, $key: "neonCyan");
+      margin: 0 auto;
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+      &:hover {
+        cursor: pointer;
+        background: map-get($map: $colorPalette, $key: "white");
+        color: map-get($map: $colorPalette, $key: "darkBlack");
+        box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "neonCyan"),
+          2px 2px 0px map-get($map: $colorPalette, $key: "magenta");
+        transition: background-color 0.5s ease;
+      }
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .nav-bar__logo {
+    display: none;
+  }
+
+  .nav-bar__bg-color {
+    background: map-get($map: $colorPalette, $key: "lightBlack");
+  }
+
+  .nav-bar__list-item--not-current {
+    background: map-get($map: $colorPalette, $key: "lightBlack");
+  }
+
+  .nav-bar__list-item--current {
+    background-color: map-get($map: $colorPalette, $key: "white");
+    color: map-get($map: $colorPalette, $key: "darkBlack");
+  }
+}
+/*? -------------------------------- FORTH BREAK-POINT -------------------------------- */
 
 @media screen and (min-width: 1024px) {
   /* -------------------------------- INDEX.HTML -------------------------------- */
-
-  .header-container {
-    justify-content: space-around;
-    height: auto;
-    width: 99%;
+  .headline-pages {
+    font-size: 8rem;
   }
-
-  .header__updown {
-    font-size: 30rem;
-  }
-
-  .header__location {
+  .sub-headline {
     font-size: 5rem;
   }
 
-  .header__insert-coin {
-    @include display-f(row, wrap, center, center);
-  }
+  header {
+    .header-container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      height: 100vh;
+      width: 100%;
+    }
 
+    .header__updown {
+      font-size: 20rem;
+    }
+
+    .header__location {
+      font-size: 5rem;
+    }
+
+    .header__insert-coin {
+      @include display-f(row, wrap, center, center);
+      display: block;
+    }
+  }
   .article-one {
     grid-template-areas:
       "subhead aside"
@@ -233,11 +269,13 @@
 
   .article-one-subhead {
     grid-area: subhead;
+    align-self: stretch;
+    font-size: 6rem;
+    line-height: 7rem;
   }
 
   .aside-one {
     grid-area: aside;
-    margin: auto;
   }
 
   [class*="parrafo-"] {
@@ -270,14 +308,21 @@
     grid-area: pf3;
   }
 
-  .article-two__headline {
-    font-size: 9rem;
+  .carousel-index {
+    .carousel-item {
+      img {
+        border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
+        height: 500px;
+        margin: 10px auto;
+      }
+    }
   }
 
   .footer__hours,
   .footer__contact,
   .footer__address,
-  .footer__content {
+  .footer__content,
+  .footer__iframe-location {
     padding: 25px;
     align-items: flex-start;
     text-align: start;
@@ -331,9 +376,34 @@
     padding: 25px 40px;
   }
 }
+
 /*? -------------------------------- CUARTO BREAK-POINT -------------------------------- */
+@media screen and (min-width: 1100px) {
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+  .article-one-subhead {
+    align-self: center;
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
+
+/*? -------------------------------- FIFTH BREAK-POINT -------------------------------- */
 
 @media screen and (min-width: 1400px) {
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+
+  .article-one-subhead {
+    align-self: center;
+    font-size: 8rem;
+    line-height: 12rem;
+  }
+
+  .article-two {
+    .sub-headline {
+      font-size: 9rem;
+    }
+  }
+
   /* -------------------------------- GALLERY.HTML -------------------------------- */
 
   .gallery {

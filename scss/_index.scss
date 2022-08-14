@@ -12,13 +12,14 @@
   flex-flow: column wrap;
   justify-content: space-around;
   align-content: space-around;
-  gap: 3em;
+  gap: 3rem;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 50px;
 }
 
 .article-one-subhead {
-  font-size: 4.5rem;
+  font-size: 3rem;
   text-shadow: 5px 2px map-get($map: $colorPalette, $key: "purple");
   color: map-get($map: $colorPalette, $key: "white");
   border-left: 3px solid map-get($map: $colorPalette, $key: "magenta");
@@ -33,7 +34,7 @@
 }
 
 [class*="parrafo-"] {
-  font-size: 2em;
+  font-size: 1.4em;
   color: map-get($map: $colorPalette, $key: "text");
   text-shadow: 1px 1px map-get($map: $colorPalette, $key: "purple");
   padding: 25px;
@@ -44,7 +45,7 @@
 }
 
 .parrafo-one {
-  order: 3;
+  display: none;
 }
 
 .parrafo-two {
@@ -60,30 +61,33 @@
 }
 
 .parrafo-five {
-  order: 7;
+  display: none;
 }
+
 .parrafo-six {
-  order: 8;
+  display: none;
 }
 
 .aside-one {
-  background-image: url("https://assets.codepen.io/t-1/freddy-g-lhy1lY3CyLI-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
   text-align: center;
-  font-size: $textLarge;
-  width: 350px;
-  height: 500px;
-  margin: 5px 20px;
   border-radius: 5px;
-  border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
   order: 2;
+  display: block;
+  width: 100%;
   margin: auto;
+  img {
+    border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
+    border-radius: 5px;
+    width: 100%;
+  }
   .aside-one__parrafo {
-    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 2rem;
     background: map-get($map: $colorPalette, $key: "lightBlack");
     text-shadow: 5px 2px map-get($map: $colorPalette, $key: "magenta");
-    margin-top: 325px;
     .aside-one__photo-by {
       font-size: 1rem;
       background: map-get($map: $colorPalette, $key: "darkBlack");
@@ -117,136 +121,13 @@
   }
 }
 
-.article-two__headline {
-  font-size: 4.5rem;
-  text-shadow: 5px 2px map-get($map: $colorPalette, $key: "purple");
-  border-left: 5px solid map-get($map: $colorPalette, $key: "magenta");
-  border-right: 5px solid map-get($map: $colorPalette, $key: "cyan");
-  background: map-get($map: $colorPalette, $key: "lightBlack");
-  padding: 50px;
-  margin: auto;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 25px 25px 0 0;
-  text-decoration: underline;
-}
-
-.article-two__slider {
-  width: 450px;
-  height: 450px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 50px auto;
-  border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
-  .article-two__slides {
-    width: 500%;
-    height: 500px;
-    display: flex;
-    input {
-      display: none;
+.carousel-index {
+  margin-bottom: 25px;
+  .carousel-item {
+    img {
+      border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
+      height: 300px;
+      margin: 10px auto;
     }
   }
-}
-
-.article-two__slide {
-  width: 20%;
-  transition: 2s;
-  .article-two__image {
-    width: 450px;
-    height: 450px;
-  }
-}
-
-/* ------------------------- CSS SLIDER MANUAL ------------------------- */
-
-.article-two__slider--navigation-manual {
-  position: absolute;
-  width: 450px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-  .manual-btn {
-    border: 2px solid map-get($map: $colorPalette, $key: "white");
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    &:hover {
-      background: map-get($map: $colorPalette, $key: "sliderCyan");
-    }
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
-  }
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -60%;
-}
-
-#radio5:checked ~ .first {
-  margin-left: -80%;
-}
-#radio6:checked ~ .first {
-  margin-left: -100%;
-}
-
-/* ------------------------- CSS SLIDER AUTO ------------------------- */
-
-.article-two__slider--navigation-auto {
-  position: absolute;
-  display: flex;
-  width: 450px;
-  justify-content: center;
-  margin-top: 460px;
-  .article-two__slider--auto-btn {
-    border: 2px solid map-get($map: $colorPalette, $key: "white");
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-}
-
-.article-two__slider--navigation-auto {
-  .article-two__slider--auto-btn {
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
-  }
-}
-
-#radio1:checked ~ .article-two__slider--navigation-auto .auto-btn1 {
-  background: map-get($map: $colorPalette, $key: "sliderCyan");
-}
-
-#radio2:checked ~ .article-two__slider--navigation-auto .auto-btn2 {
-  background: map-get($map: $colorPalette, $key: "sliderCyan");
-}
-
-#radio3:checked ~ .article-two__slider--navigation-auto .auto-btn3 {
-  background: map-get($map: $colorPalette, $key: "sliderCyan");
-}
-
-#radio4:checked ~ .article-two__slider--navigation-auto .auto-btn4 {
-  background: map-get($map: $colorPalette, $key: "sliderCyan");
-}
-
-#radio5:checked ~ .article-two__slider--navigation-auto .auto-btn5 {
-  background: map-get($map: $colorPalette, $key: "sliderCyan");
-}
-
-#radio6:checked ~ .article-two__slider--navigation-auto .auto-btn6 {
-  background: map-get($map: $colorPalette, $key: "sliderCyan");
 }

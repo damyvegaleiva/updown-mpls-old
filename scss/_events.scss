@@ -5,17 +5,16 @@ events-container {
 }
 
 .calendar__calendar-iframe {
-  margin-bottom: 150px;
-  width: 85%;
-  height: 500px;
+  margin-bottom: 50px;
+  width: 90%;
+  height: 30%;
 }
 
 .calendar__container {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   background: url("../images/events.jpg");
   border-radius: 0px;
-  height: 75%;
   background-repeat: no-repeat;
   background-size: cover;
 }
