@@ -73,7 +73,7 @@
   }
 
   .parrafo-two {
-    grid-area: pf4;
+    grid-area: pf2;
     height: 100%;
   }
 
@@ -83,16 +83,18 @@
   }
 
   .parrafo-four {
+    grid-area: pf4;
     height: 100%;
   }
 
   .parrafo-five {
+    grid-area: pf5;
     display: block;
     height: 100%;
   }
 
   .parrafo-six {
-    grid-area: pf2;
+    grid-area: pf6;
     display: block;
     height: 100%;
   }
@@ -268,44 +270,14 @@
   }
 
   .article-one-subhead {
-    grid-area: subhead;
     align-self: stretch;
     font-size: 6rem;
     line-height: 7rem;
   }
 
-  .aside-one {
-    grid-area: aside;
-  }
-
   [class*="parrafo-"] {
     text-align: left;
     font-size: $textSmall;
-  }
-
-  .parrafo-one {
-    grid-area: pf2;
-  }
-
-  .parrafo-two {
-    grid-area: pf1;
-    height: 100%;
-  }
-
-  .parrafo-three {
-    grid-area: pf6;
-  }
-
-  .parrafo-four {
-    grid-area: pf4;
-  }
-
-  .parrafo-five {
-    grid-area: pf5;
-  }
-
-  .parrafo-six {
-    grid-area: pf3;
   }
 
   .carousel-index {

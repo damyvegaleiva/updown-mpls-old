@@ -80,6 +80,13 @@ body::after {
   text-decoration: underline;
 }
 
+#fa-icon {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
 /* --------------------------- HEADER ---------------------------*/
 header {
   margin: 5px;
@@ -215,13 +222,13 @@ nav .nav-bar__links-list a:hover {
   text-shadow: 1px 1px #7d50b9;
   padding: 25px;
   box-shadow: -3px 1px 10px #028299;
-  border-radius: 5px;
+  border-radius: 12px;
   margin: auto;
   text-align: center;
 }
 
 .parrafo-one {
-  display: none;
+  order: 3;
 }
 
 .parrafo-two {
@@ -237,11 +244,11 @@ nav .nav-bar__links-list a:hover {
 }
 
 .parrafo-five {
-  display: none;
+  order: 7;
 }
 
 .parrafo-six {
-  display: none;
+  order: 8;
 }
 
 .aside-one {
@@ -337,8 +344,8 @@ nav .nav-bar__links-list a:hover {
 }
 
 .footer__heading {
-  font-size: 4rem;
-  line-height: 3rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 
 .footer__social-parrafo {
@@ -755,7 +762,7 @@ events-container {
     height: 100%;
   }
   .parrafo-two {
-    grid-area: pf4;
+    grid-area: pf2;
     height: 100%;
   }
   .parrafo-three {
@@ -763,14 +770,16 @@ events-container {
     height: 100%;
   }
   .parrafo-four {
+    grid-area: pf4;
     height: 100%;
   }
   .parrafo-five {
+    grid-area: pf5;
     display: block;
     height: 100%;
   }
   .parrafo-six {
-    grid-area: pf2;
+    grid-area: pf6;
     display: block;
     height: 100%;
   }
@@ -905,36 +914,13 @@ events-container {
     grid-template-areas: "subhead aside" "pf1 aside" "pf2 pf3" "pf4 pf5" "pf6 pf6";
   }
   .article-one-subhead {
-    grid-area: subhead;
     align-self: stretch;
     font-size: 6rem;
     line-height: 7rem;
   }
-  .aside-one {
-    grid-area: aside;
-  }
   [class*=parrafo-] {
     text-align: left;
     font-size: 2rem;
-  }
-  .parrafo-one {
-    grid-area: pf2;
-  }
-  .parrafo-two {
-    grid-area: pf1;
-    height: 100%;
-  }
-  .parrafo-three {
-    grid-area: pf6;
-  }
-  .parrafo-four {
-    grid-area: pf4;
-  }
-  .parrafo-five {
-    grid-area: pf5;
-  }
-  .parrafo-six {
-    grid-area: pf3;
   }
   .carousel-index .carousel-item img {
     border: 3px solid #f5deb3;

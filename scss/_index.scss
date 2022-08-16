@@ -39,13 +39,13 @@
   text-shadow: 1px 1px map-get($map: $colorPalette, $key: "purple");
   padding: 25px;
   box-shadow: -3px 1px 10px map-get($map: $colorPalette, $key: "cyan");
-  border-radius: 5px;
+  border-radius: 12px;
   margin: auto;
   text-align: center;
 }
 
 .parrafo-one {
-  display: none;
+  order: 3;
 }
 
 .parrafo-two {
@@ -61,11 +61,11 @@
 }
 
 .parrafo-five {
-  display: none;
+  order: 7;
 }
 
 .parrafo-six {
-  display: none;
+  order: 8;
 }
 
 .aside-one {
