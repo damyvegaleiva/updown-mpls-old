@@ -302,6 +302,9 @@
 
   .footer__container {
     @include display-f(row, nowrap, space-around, flex-start);
+    padding: 5px 20px 0;
+    max-width: 2500px;
+    margin: auto;
   }
 
   .footer__parrafos {

@@ -941,6 +941,9 @@ events-container {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: flex-start;
+    padding: 5px 20px 0;
+    max-width: 2500px;
+    margin: auto;
   }
   .footer__parrafos {
     font-size: 1.5rem;
