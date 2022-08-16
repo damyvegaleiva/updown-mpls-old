@@ -538,8 +538,9 @@ events-container {
 }
 
 .contact-us__left {
-  margin-top: 10px;
-  height: 10%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 100px;
   background: url("../images/up-down-minneapolis.png") no-repeat center;
   background-size: contain;
 }
