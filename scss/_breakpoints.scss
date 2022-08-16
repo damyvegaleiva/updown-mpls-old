@@ -230,6 +230,24 @@
 /*? -------------------------------- FORTH BREAK-POINT -------------------------------- */
 
 @media screen and (min-width: 1024px) {
+  /* -------------------------------- BACK TO THE TOP BUTTON -------------------------------- */
+  #btn-back-to-top {
+    position: fixed;
+    background: map-get($map: $colorPalette, $key: "darkBlack");
+    color: map-get($map: $colorPalette, $key: "white");
+    box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "magenta"),
+      2px 2px 0px map-get($map: $colorPalette, $key: "neonCyan");
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+    z-index: 1;
+    &:hover {
+      color: map-get($map: $colorPalette, $key: "borderContainer");
+    }
+  }
   /* -------------------------------- INDEX.HTML -------------------------------- */
   .headline-pages {
     font-size: 8rem;
