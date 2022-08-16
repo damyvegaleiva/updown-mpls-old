@@ -368,6 +368,39 @@
   .contact-us__right {
     padding: 25px 40px;
   }
+
+  .notFound {
+    flex-flow: row nowrap;
+    max-width: 1920px;
+    margin: auto;
+    width: 100%;
+    .notFound__images {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .notFound__text {
+      width: 60%;
+      h1 {
+        font-size: 6rem;
+      }
+      h2 {
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 3.5rem;
+      }
+      a {
+        font-size: $textMedium;
+        &:hover {
+          text-decoration: underline;
+          color: rgb(255, 255, 0);
+          text-shadow: 2px 2px map-get($map: $colorPalette, $key: "darkBlack");
+        }
+      }
+    }
+  }
 }
 
 /*? -------------------------------- CUARTO BREAK-POINT -------------------------------- */
