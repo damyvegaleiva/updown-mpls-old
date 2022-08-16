@@ -34,8 +34,11 @@ Las Herramientas utilizadas en este proyecto son:
 
 - [**Bootstrap**](https://getbootstrap.com/): Este *framework* lo utilice para ciertas partes de mi website como el carrusel de imagenes, la navbar responsive y el acordeon.
 
-## Reporte de errores
+## Reporte de errores:
 Los invito a que en caso de encontrar algun error en mi proyecto reportarlo a damyvegaleiva@gmail.com contandome cual es el error que encontraron, gracias.
 
-## Estado del proyecto
+## ERROR 404:
+La pagina de error404 se puede encontrar en la pagina de [contact](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/contact.html#contact) al hacer click en SUBMIT.
+
+## Estado del proyecto:
 Si bien este proyecto esta en su fase final/deployment en un futuro sera revisado y se le aplicara [*javascript*](https://www.javascript.com/).
