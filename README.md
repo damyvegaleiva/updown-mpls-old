@@ -1,7 +1,7 @@
 # ProyectoCoderHouse 💻
 ## Links:
 ##### [000Webhost](https://proyectoupdown.000webhostapp.com/)
-##### [GitHub Pages](https://damyvegaleiva.github.io/ProyectoCoderHouse/)
+##### [GitHub Pages](https://damyvegaleiva.github.io/WebDevelopment-CoderHouse/)
 ________________________________________________________________________________________
 
 ## Introducción:
