@@ -1,4 +1,4 @@
-# ProyectoCoderHouse 💻
+# Web Development Project 💻
 
 ## Links:
 
@@ -11,7 +11,7 @@
 ## Introducción / Introduction:
 
 El proyecto es una idea propia del sitio para el bar donde trabajo, conformado por 6 páginas.
-Este es mi primer proyecto de desarrollo web, el estilo 90's/retro/neon del proyecto esta basado a la tematica del bar el cual esta basado en los 90's con Arcades de esa misma epoca tambien. / This project is an original idea for the bar i work for, it has 6 pages in total. This is my first Web Development proyect, the 90's/retro/neon style of this project it´s based on the bar them that's also based on the 90's with Arcade machines of that same era.
+Este es mi primer proyecto de desarrollo web, el estilo 90's/retro/neon del proyecto esta basado a la tematica del bar el cual esta basado en los 90's con Arcades de esa misma epoca tambien. / This project is an original idea for the bar i work for, it contains 6 pages in total. This is my first Web Development proyect, the 90's/retro/neon style of this project it´s based on the bar them that's also based on the 90's with Arcade machines of that same era.
 
 [index](https://damyvegaleiva.github.io/ProyectoCoderHouse/), [menu](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/menu.html#menu), [events](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/events.html#events), [gallery](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/gallery.html#gallery), [contact](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/contact.html#contact) & [privacy & policy](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/privacy-policy.html).
 
@@ -35,7 +35,7 @@ Este es mi primer proyecto de desarrollo web, el estilo 90's/retro/neon del proy
 
 - ### [Contact](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/contact.html#contact)
 
-  Un formulario hecho para estar en contacto con los clientes con la posibilidad de dejar un mensaje con sugerencias y demas. / A form made to be in contact with our customers with the feature of being able to send out a message with suggestions and more (is not fully functional at the moment)
+  Un formulario hecho para estar en contacto con los clientes con la posibilidad de dejar un mensaje con sugerencias y demas. / A form made to be in contact with our customers with the feature of being able to send out a message with suggestions and more (is not fully functional at the moment).
 
 - ### [Privacy & Policy](https://damyvegaleiva.github.io/ProyectoCoderHouse/pages/privacy-policy.html)
   Secion de politicas de privacidad con un carrusel de imagenes y un acordeon con toda la informacion necesaria. / Policy and privacy section with an accordeon that has all the info you need about the place.
