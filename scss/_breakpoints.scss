@@ -418,9 +418,14 @@
 @media screen and (min-width: 1400px) {
   /* -------------------------------- INDEX.HTML -------------------------------- */
 
+  .article-one {
+    width: 55%;
+    margin-top: 150px;
+  }
+
   .article-one-subhead {
     align-self: center;
-    font-size: 8rem;
+    font-size: 7.5rem;
     line-height: 12rem;
   }
 
